@@ -61,7 +61,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Breakdownschets (week 1)
-
+<img src="images/homepage_breakdownsheet.png" width="375px" alt"breakdownsheet van de homepagina van bol.com" 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
 

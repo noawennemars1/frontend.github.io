@@ -183,7 +183,7 @@ main h2{
     font-family: 'bree-serif', serif;
     font-size: 1.2em;
     margin-top: 13em;
-    margin-left: 0.5em;
+    margin-left: 0.6em;
 }
 
 main section.categorien{
@@ -194,11 +194,14 @@ main section.categorien{
 
 main section.categorien a{
     margin: 0.5em;
+    text-decoration: none;
+    color: #333;
 }
 
 main section.categorien img{
-    margin: 0;
-    max-width: 10em;
+    margin: 0 0 0 0.5em;
+    max-width: 8em;
+
 }
 
 main section.categorien p{
@@ -212,7 +215,7 @@ main section.dagdeal {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1em;
+    margin: 1em 1em 0.5em 1em;
     background-color: #fafafa;
 }
 
@@ -241,11 +244,13 @@ main section.dagdeal span{
 main section.dagdeal span p{
     margin-top: 0.5em;
     margin-left: 0.5em;
+    font-weight: bold;
+    font-size: 0.85em;
 }
 
-main section.dagdeal span p:last-child{
+main section.dagdeal span p:last-of-type{
     opacity: 0.75;
-    left: 0;
+    font-weight: normal;
 }
 
 main section.dagdeal span a{
@@ -255,7 +260,17 @@ main section.dagdeal span a{
     text-decoration: none;
     padding: 0.7em 1em;
     width: 9em;
-    margin: 0.75em;
+    margin: 1em 0.75em;
 }
 
+main a.link {
+    color: #00f;
+    text-decoration: none;
+    margin: 1em;
+}
 
+main a.link img{
+    width: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0;
+}

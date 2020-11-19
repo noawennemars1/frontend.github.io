@@ -20,13 +20,13 @@ body {
 
 /*Het blauwe pijltje op de foto's*/
 .pijltjerechts {
-    position: absolute;
+    display: flex;
     left: 1em;
-    bottom: 2em;
-    margin: 0;
+    bottom: -13em;
     max-width: 2em;
     padding: 4%;
     background-color: #00f;
+    z-index: 10;
 }
 
 header{
@@ -75,6 +75,7 @@ header nav img.icoon{
     height: 1.5em;
 }
 
+/*zoekbalk*/
 header form{
     position: relative;
     display: flex;
@@ -95,12 +96,13 @@ header form input{
     border-radius: 10em;
     padding: 1.2em;
 }
-
+/*zoekbalk tekst*/
 header form input::placeholder{
     color: black;
     opacity: 0.5;
 }
 
+/*zoekicoon*/
 header form button{
     width: 2em;
     margin-left: -3em;
@@ -109,45 +111,53 @@ header form button{
     border: none;
 }
 
-main section{
+/*main img van Sinterklaas*/
+main a img{
+    max-width: 100%;
+    margin-top: 3.5em;
+    margin-bottom: 0.1em;
+}
+
+/*main section met voordelen en inspiratie plaatjes met linkjes*/
+main section.voordeel-en-inspiratie{
     display: flex;
     flex-direction: column;
     margin: 1em;
 }
 
-main a img{
-    max-width: 100%;
-    margin-top: 3.5em;
-    margin-bottom: 0.7em;
-}
-
-main section ul{
+main section.voordeel-en-inspiratie ul{
     position: absolute;
     display: flex;
-    justify-content: flex-start;
+    top: 13em;
 }
 
-main section ul li{
-    position: relative;
+main section.voordeel-en-inspiratie ul li{
     display: flex;
     flex-direction: column;
     list-style: none;
-    max-width: 14em;
-    margin-left: 1em;
+    width: 14em;
+    margin-right: 1em;
 }
 
-main section ul li h2{
+main section.voordeel-en-inspiratie ul li a span{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    top: 6em;
+}
+
+main section.voordeel-en-inspiratie ul li h2{
     margin-top: 0.5em;
     margin-left: 0.8em;
+    width: 16ch;
     font-family: 'bree-serif', 'Graphik', serif;
     color: #0000a4;
     font-size: 1.4em;
+    line-height: 1em;
 }
 
-main section ul li h3{
-    position: absolute;
-    top: 2.2em;
+main section.voordeel-en-inspiratie ul li h3{
     margin-left: 1em;
     font-family: 'bree-serif', 'Graphik', serif;
     font-weight: lighter;
@@ -157,29 +167,95 @@ main section ul li h3{
 }
 
 main section ul li img{
+    position: relative;
     display: flex;
-    max-width: 100%;
+    width: 100%;
 }
 
-main section ul li p{
+main section.voordeel-en-inspiratie ul li p{
     font-size: 0.6em;
     opacity: 0.5;
     display: flex;
     justify-content: flex-end;
 }
 
-main section span{
+main h2{
+    font-family: 'bree-serif', serif;
+    font-size: 1.2em;
+    margin-top: 13em;
+    margin-left: 0.5em;
+}
+
+main section.categorien{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+main section.categorien a{
+    margin: 0.5em;
+}
+
+main section.categorien img{
+    margin: 0;
+    max-width: 10em;
+}
+
+main section.categorien p{
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+/*dagdeal*/
+
+main section.dagdeal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    background-color: #fafafa;
+}
+
+main section.dagdeal h2{
+    color: red;
+    display: flex;
+    text-align: center;
+    width: 10ch;
+    background-color: white;
+    padding: 0 1em;
+    margin: 0 0 0.5em 0;
+    box-shadow: 1px 2px 4px 0 rgba(49,49,47,.3);
+}
+
+main section.dagdeal img{
+    width: 8em;
+    margin: 1em;
+}
+
+main section.dagdeal span{
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
-section h2{
-    margin: 10em 0 0.2em 0;
-    font-family: 'bree-serif', serif;
+main section.dagdeal span p{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
 }
 
-main section span img{
-    width: 10em;
-    height: 10em;
+main section.dagdeal span p:last-child{
+    opacity: 0.75;
+    left: 0;
 }
+
+main section.dagdeal span a{
+    background-color: #00f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7em 1em;
+    width: 9em;
+    margin: 0.75em;
+}
+
+

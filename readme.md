@@ -81,4 +81,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/detailpaginabolcom.gif" width="375px" alt="detailpagina op bol.com van het spel Qwixx">
+<img src="images/sportbolcom.png" width="375px" alt="sportartikelen pagina op bol.com">

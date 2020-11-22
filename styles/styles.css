@@ -224,26 +224,29 @@ main ul li a img:first-of-type{
 
 /*css voor categorien*/
 
-main section.categorien{
+main section:nth-of-type(1){
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     margin-right: -1em;
 }
 
-main section.categorien a{
+main section:nth-of-type(1) a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     color: #333;
 }
 
-main section.categorien img{
+main section:nth-of-type(1) img{
     width: 8em;
     margin: 0.5em 1em 0 0;
 }
 
-main section.categorien p{
-    text-align: center;
+main section:nth-of-type(1) p{
     margin-top: 0.2em;
+    margin-left: -1em;
 }
 
 /*dagdeal*/
@@ -429,9 +432,110 @@ main section.ookinteressant ol li a p:last-of-type{
 }
 
 /*css voor de sport detailpagina*/
+main a.banner{
+    position: relative;
+}
 
-main section.banner {
+main a.banner h2{
+    position: absolute;
+    margin: 0 0 0 1em;
+    font-size: 1.6em;
+    width: 8ch;
+    top: 1em;
+    line-height: 1em;
+    z-index: 10;
+    color: #0000a4;
+}
 
+main a.banner h3{
+    position: absolute;
+    margin: 0 0 0 1em;
+    width: 10ch;
+    font-size: 1.5em;
+    top: 4em;
+    line-height: 0.9em;
+    z-index: 10;
+}
+
+main a.banner img:last-of-type{
+    padding-top: 1em;
+}
+
+main a.banner img:first-of-type{
+    position: absolute;
+    bottom: 1.5em;
+    margin-left: 1.5em;
+}
+
+main section.opties{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 1em;
+    margin-right: -1em;
+}
+
+main section.opties a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #dadada;
+    border-radius: 0.5em;
+    padding: 0.25em 3em 0.25em 1em;
+    width: 15em;
+    margin-right: 1em;
+}
+
+main section.opties img{
+    width: 1em;
+    margin: 0.5em 1em 0 0;
+}
+
+main a.filter{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    color: white;
+    background-color: #0000FF;
+    padding: 0.5em;
+}
+
+main span{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+main span img{
+    width: 1em;
+    height: 1em;
+}
+
+main span button img{
+    padding-left: 0.3em;
+}
+
+main span button{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    background-color: white;
+    width: 12em;
+    padding: 0.75em 1em;
+    font-size: 0.7em;
+}
+
+/*css voor de bolletjes met merken*/
+
+main section.merken ol li a img{
+    width: 4em;
+    padding: 0.5em;
+    border-radius: 20em;
+    border: 1px solid #dadada;
+    margin-top: 1em;
+    margin-right: -1em;
 }
 
 /*eindelijk bij de fooooteerrrrrrrr!!! Wohooooooo*/
@@ -520,6 +624,7 @@ footer section.servicecontact {
 footer section.servicecontact h2{
     margin-top: 0;
     flex-basis: 100%;
+    color: white;
 }
 
 footer section.servicecontact div{

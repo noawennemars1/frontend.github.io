@@ -18,6 +18,51 @@ body {
     font-stretch: normal
 }
 
+/*algemene css voor de html*/
+
+a{
+    text-decoration: none;
+    font-family:'Graphik', Arial, Helvetica, sans-serif;
+    color: #0000FF;
+}
+h2{
+    font-family: 'bree-serif', 'Graphik', serif;
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #333;
+}
+
+h3{
+    font-family: 'bree-serif', 'Graphik', serif;
+    font-weight: 100;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    margin-left: 1em;
+    color: #0000a4;
+}
+
+img {
+    margin: 0;
+    width: 100%;
+}
+
+p{
+    font-family: 'Graphik', Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+a img.pijl{
+    background-color: #00f;
+    width: 2em;
+    padding: 0.8em;
+    margin: 0;
+}
+
+main{
+    margin: 3.5em 1em 0 1em;
+}
+
 header{
     position: relative;
     top:1em;
@@ -41,7 +86,7 @@ header nav img.menuicoon {
 header nav{
     position: absolute;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
 }
@@ -51,6 +96,7 @@ header nav ul{
     justify-content: flex-end;
     margin-left: auto;
     margin-right: 2em;
+    width: 70%;
 }
 
 header nav ul li{
@@ -112,47 +158,13 @@ header form button{
     border: none;
 }
 
-a{
-    text-decoration: none;
-    font-family:'Graphik', Arial, Helvetica, sans-serif;
-    color: #0000a4;
-}
-h2{
-    font-family: 'bree-serif', 'Graphik', serif;
-    font-size: 1.3em;
-    margin-left: 0.8em;
-    margin-top: 1em;
-}
-
-h3{
-    font-family: 'bree-serif', 'Graphik', serif;
-    font-weight: 100;
-    font-size: 1em;
-    letter-spacing: 0.02em;
-    margin-left: 1em;
-}
-
-img {
-    margin: 0;
-    width: 100%;
-}
-
-p{
-    font-family: 'Graphik', Arial, Helvetica, sans-serif;
-}
-
-a img.pijl{
-    background-color: #00f;
-    width: 2em;
-    padding: 0.8em;
-    margin: 0;
-}
+/*css voor de homepage*/
 
 /*main img van Sinterklaas*/
 main a img.sinterklaas{
-    max-width: 100%;
-    margin-top: 3.5em;
+    width: 109.5%;
     margin-bottom: 0.1em;
+    margin-left: -1em;
 }
 
 /*main section met plaatjes van kortingen en voordelen*/
@@ -163,11 +175,11 @@ main ul{
     overflow-x: scroll;
     position: relative;
     margin-top: 1em;
+    margin-right: -1em;
 }
 
 main ul li{
     list-style: none;
-    margin-left: 1em;
 }
 
 main ul li a{
@@ -192,8 +204,10 @@ main ul li a p{
 main ul li a h2{
     position: absolute;
     margin-top: 0;
+    margin-left: 0.8em;
     top: 0.5em;
     width: 65%;
+    color: #0000a4;
 }
 
 main ul li a h3{
@@ -208,22 +222,23 @@ main ul li a img:first-of-type{
     margin-left: 1em;
 }
 
+/*css voor categorien*/
+
 main section.categorien{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    margin-right: -1em;
 }
 
 main section.categorien a{
-    margin: 0.5em;
     text-decoration: none;
     color: #333;
 }
 
 main section.categorien img{
-    margin: 0 0 0 0.5em;
     width: 8em;
-
+    margin: 0.5em 1em 0 0;
 }
 
 main section.categorien p{
@@ -294,6 +309,7 @@ main a.paard h2{
     margin: 0 0 0 1em;
     top: 2em;
     z-index: 10;
+    color: #0000a4;
 }
 
 main a.paard h3{
@@ -304,7 +320,8 @@ main a.paard h3{
 }
 
 main a.paard img:last-of-type{
-    padding: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
 }
 
 main a.paard img:first-of-type{
@@ -312,9 +329,6 @@ main a.paard img:first-of-type{
     bottom: 2em;
     margin-left: 2em;
 }
-
-
-
 
 main a.link {
     color: #00f;
@@ -329,8 +343,6 @@ main a.link img{
     margin-top: 0;
 }
 
-/*css voor de foto van het paard van sinterklaas*/
-
 /*css voor het gedeelte met cadeaus voor iedereen*/
 
 main ol{
@@ -338,6 +350,7 @@ main ol{
     justify-content: row;
     overflow-x: scroll;
     list-style: none;
+    margin-right: -1em;
 }
 
 main ol li{
@@ -355,12 +368,15 @@ main ol li a img{
 }
 
 /*css voor het je bekeek section*/
-
 main a.jebekeek{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1em;
+}
+
+main h2{
+    margin-left: 0em;
 }
 
 main a.jebekeek p{
@@ -378,6 +394,7 @@ main a.jebekeek img{
 main section ol{
     overflow-x: scroll;
     margin-bottom: 0.5em;
+    margin-left: -1em;
 }
 
 main section ol li a img{
@@ -400,7 +417,7 @@ main section.rba ol li a img{
 }
 
 /*css voor de section ook interessant*/
-main section.ookinteressant ol li a p{
+main section.ookinteressant ol li a p {
     text-align: left;
     font-weight: 800;
     font-size: 0.8em;
@@ -411,9 +428,16 @@ main section.ookinteressant ol li a p:last-of-type{
     font-weight: 500;
 }
 
+/*css voor de sport detailpagina*/
+
+main section.banner {
+
+}
+
 /*eindelijk bij de fooooteerrrrrrrr!!! Wohooooooo*/
 /*Het is trouwens css voor het lijstje ontdek alles bij bol.com
 en voor het lijstje onder het blauwe stukje service*/
+
 footer section ul{
     margin: 0 1em;
 }
@@ -516,37 +540,115 @@ footer section.servicecontact div a{
     text-decoration: underline;
 }
 
-/*footer section.servicecontact img{
-    width: 3em;
-}
 
-footer section.servicecontact p{
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-footer section.servicecontact div p:nth-child(3){
-    margin-top: 0;
-}
-
-footer section.servicecontact div p:nth-child(5){
-    margin-top: 0;
-}
-
-footer section.servicecontact div p a{
-    color: white;
-    text-decoration: underline;
-}*/
-
-
-footer a{
+footer a.app{
     color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 2em 0;
+    margin: -2em 1em 1em 1em;
+    height: 5em;
+    border-bottom: 2px solid #dadada;
+}
+
+footer a.app button{
+    background-color: #00f;
+    color: white;
+    font-size: 0.9em;
+    padding: 0.5em;
+    border: none;
 }
 
 footer a.app img{
     border-radius: 0.5em;
     width: 3em;
 }
+
+footer section.socials{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #dadada;
+}
+
+footer section.socials h3{
+    font-family: 'Graphik', Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+footer section.socials div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 2em;
+    margin: 0 4em;
+}
+
+footer section.socials div a img{
+    width: 1.5em;
+}
+
+footer section.socials p{
+    font-size: 0.9em;
+}
+
+footer section.beoordelingen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5em;
+    padding: 0.5em 0;
+}
+
+footer section.beoordelingen p{
+    font-size: 0.7em;
+}
+
+footer section.beoordelingen div:last-of-type{
+    display: flex;
+    justify-content: center;
+}
+
+footer section.beoordelingen div img{
+    width: 2.3em;
+    margin: 0.5em;
+}
+
+footer section.kleinelettertjes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer section.kleinelettertjes img{
+    width: 15em;
+    margin: 1em;
+}
+
+footer section.kleinelettertjes img:last-of-type {
+    width: 2.3em;
+    display: flex;
+}
+
+
+footer section.kleinelettertjes p{
+    width: 45ch;
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em
+}
+
+
+footer section.kleinelettertjes p:first-of-type{
+    width: 30ch;
+}
+
+
 
 
 

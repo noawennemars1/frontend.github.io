@@ -45,14 +45,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -screenshot(s) van hoe ver je bent met korte uitleg-
 
 ### Agenda voor meeting
+    
+| Samantha                                                                           | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat de achtergrondkleur verandert als een element in beeld is? | Ik heb een vraag over mijn header |Hoe krijg ik ruimte tussen mijn scrollbar?  | Hoe maak je een achtergrond gradient met stipjes?              | Ik heb een vraag over mijn header|
+| In hoeverre is dit de surface plane/wat moet er bij?                               | ---                |Hoe krijg ik ruimte onder mijn button?      | Hoe krijg ik mijn header fixed?                 | ---            |
+| ---                                                                                | ---                | ---          | Hoe krijg ik sommige dingen responsive  | ---           |
 
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 

@@ -27,7 +27,7 @@ a{
 }
 h2{
     font-family: 'bree-serif', 'Graphik', serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: 1em;
     margin-left: 1em;
     color: #333;
@@ -206,14 +206,16 @@ main ul li a h2{
     margin-top: 0;
     margin-left: 0.8em;
     top: 0.5em;
-    width: 65%;
     color: #0000a4;
 }
 
 main ul li a h3{
     position: absolute;
-    top: 2em;
-    width: 50%;
+    top: 3em;
+}
+
+main ul li a:nth-of-type(3) h3{
+    top: 8em
 }
 
 main ul li a img:first-of-type{
@@ -318,7 +320,7 @@ main a.paard h2{
 main a.paard h3{
     position: absolute;
     margin: 0 0 0 1.4em;
-    top: 4em;
+    top: 4.6em;
     z-index: 10;
 }
 
@@ -431,12 +433,16 @@ main section.ookinteressant ol li a p:last-of-type{
     font-weight: 500;
 }
 
+
+
+
+
 /*css voor de sport detailpagina*/
-main a.banner{
+main a{
     position: relative;
 }
 
-main a.banner h2{
+main.sport a h2{
     position: absolute;
     margin: 0 0 0 1em;
     font-size: 1.6em;
@@ -447,7 +453,7 @@ main a.banner h2{
     color: #0000a4;
 }
 
-main a.banner h3{
+main.sport a h3{
     position: absolute;
     margin: 0 0 0 1em;
     width: 10ch;
@@ -636,17 +642,26 @@ main section.paginas{
 }
 
 main section.paginas p{
-    background-color: #f0f6ff;
     width: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #00f;
+    border: 1px solid #dadada;
+    border-radius: 0.5em;
+}
+
+main section.paginas p:first-child{
+    color: #333;
+    font-weight: bold;
 }
 
 main section.paginas img{
     width: 3em;
     background-color: #f0f6ff;
     padding: 1.2em;
+    border-radius: 0.5em;
+    border-bottom: 1px solid rgba(0,0,0,.35);
 }
 
 /*eindelijk bij de fooooteerrrrrrrr!!! Wohooooooo*/
@@ -757,7 +772,7 @@ footer section.servicecontact div a{
 }
 
 
-footer a.app{
+footer section.app{
     color: #333;
     display: flex;
     justify-content: space-between;
@@ -767,7 +782,12 @@ footer a.app{
     border-bottom: 2px solid #dadada;
 }
 
-footer a.app button{
+footer section.app a{
+    display: flex;
+    color: #333;
+}
+
+footer section button{
     background-color: #00f;
     color: white;
     font-size: 0.9em;
@@ -775,9 +795,10 @@ footer a.app button{
     border: none;
 }
 
-footer a.app img{
+footer section.app a img{
     border-radius: 0.5em;
     width: 3em;
+    margin-right: 0.5em;
 }
 
 footer section.socials{

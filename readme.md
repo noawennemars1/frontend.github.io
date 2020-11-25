@@ -35,14 +35,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 1 (week 3)
+Het ging tot nu toe wel best goed. Er zijn een aantal dingen waar ik hulp bij heb gehad van een medestudent. Ik heb hulp gehad bij het positioneren van de tekst over de afbeeldingen heen in de main. Dit is nog niet helemaal gefixt, dus daar moet ik nog mee bezig.
+Daarnaast heb ik nog hulp gehad bij het positioneren van het icoon naast de tekst in het blauwe stukje van de footer. 
+Ook moet ik de classes nog weghalen en een aantal dingetjes toevoegen. Het gaat dus best goed. 
 
-### Stand van zaken
+**Screenshot(s) van de eerste pagina (small screen):**
 
--dit ging goed & dit was lastig-
+<img src="images/voortgang1-home.png" width="375px" alt="homepagina van bol.com">
 
-**Screenshot(s):**
+**Screenshot(s) van de tweede pagina (small screen):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/voortgang1-sport.png" width="375px" alt="sportartikelen pagina op bol.com">
 
 ### Agenda voor meeting
     

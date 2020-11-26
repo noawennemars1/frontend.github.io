@@ -58,7 +58,7 @@ Ook moet ik de classes nog weghalen en een aantal dingetjes toevoegen. Het gaat 
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+In het eerste gesprek is mijn header bekeken. We zijn er nog niet helemaal uitgekomen, maar naderhand heb ik een bericht gehad van Janno over hoe ik ermee verder kan. Ik denk dat ik daar wel verder mee kan.
 
 
 

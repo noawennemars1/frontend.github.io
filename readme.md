@@ -29,10 +29,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+De dingen waar ik bij voortgang 1 tegenaan liep, heb ik inmiddels opgelost. Nu moet ik het hamburger menu maken en zorgen dat het responsive wordt. Ook heb ik al een beetje javascript toegevoegd. 
 
--same as voortgang 1-
+**Screenshot(s) van de eerste pagina (small screen):**
 
+<img src="images/voortgang2-home.png" width="375px" alt="homepagina van bol.com">
 
+**Screenshot(s) van de tweede pagina (small screen):**
+
+<img src="images/voortgang2-sport.png" width="375px" alt="sportartikelen pagina op bol.com">
+
+### Verslag van meeting
 
 ## Voortgang 1 (week 3)
 Het ging tot nu toe wel best goed. Er zijn een aantal dingen waar ik hulp bij heb gehad van een medestudent. Ik heb hulp gehad bij het positioneren van de tekst over de afbeeldingen heen in de main. Dit is nog niet helemaal gefixt, dus daar moet ik nog mee bezig.

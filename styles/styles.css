@@ -24,12 +24,12 @@ a{
     text-decoration: none;
     font-family:'Graphik', Arial, Helvetica, sans-serif;
     color: #0000FF;
+    position: relative;
 }
 h2{
     font-family: 'bree-serif', 'Graphik', serif;
     font-size: 1.5em;
     margin-top: 1em;
-    margin-left: 1em;
     color: #333;
 }
 
@@ -57,17 +57,18 @@ a img.pijl{
     width: 2em;
     padding: 0.8em;
     margin: 0;
+    max-width: 2em;
 }
 
 main{
-    margin: 3.5em 1em 0 1em;
+    margin: 0 1em 0 1em;
 }
 
 header{
-    position: relative;
-    top:1em;
-    left: 1em;
-    right: 1em;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
 }
 
 header h1{
@@ -78,58 +79,52 @@ header h1{
 }
 
 /*De navigatiebalk wordt hier opgemaakt*/
-header nav img.menuicoon {
-    padding: 0.2em;
-    max-width: 1.75em;
-}
-
 header nav{
-    position: absolute;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 header nav ul{
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 2em;
-    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 1em 0;
 }
 
 header nav ul li{
     list-style: none;
     margin: 0 0.4em;
+    align-self: center;
+}
+
+header nav ul li:nth-of-type(2){
     display: flex;
-    align-items: center;
+    flex-grow: 2;
 }
 
 header nav a {
     color: #0000a4;
-    margin-left: 0.5em;
     text-decoration: none;
 }
 
-header nav img.icoon{
+header nav img{
     width: 1.5em;
     height: 1.5em;
 }
 
 /*zoekbalk*/
-header form{
-    position: relative;
+header nav form{
     display: flex;
     justify-content: center;
-    left: -1em;
-    top: 2.5em;
-    width: 100%;
     background-color: #0000a4;
     padding: .8em 0;
+    width: 100vw;
 }
 
-header form input{
+header nav form input{
     background-image: url("../images/zoekicoon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -137,34 +132,24 @@ header form input{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     height: 3em;
     border: none;
     border-radius: 10em;
     padding: 1.3em 1em;
 }
 /*zoekbalk tekst*/
-header form input::placeholder{
+header nav form input::placeholder{
     color: black;
     opacity: 0.5;
-}
-
-/*zoekicoon*/
-header form button{
-    width: 20em;
-    margin-left: -3em;
-    padding: 0.2em;
-    background: white;
-    border: none;
 }
 
 /*css voor de homepage*/
 
 /*main img van Sinterklaas*/
-main a img.sinterklaas{
-    width: 109.5%;
-    margin-bottom: 0.1em;
-    margin-left: -1em;
+main img:first-of-type {
+    width: 100vw;
+    margin: 0 -1em;
 }
 
 /*main section met plaatjes van kortingen en voordelen*/
@@ -214,8 +199,8 @@ main ul li a h3{
     top: 3em;
 }
 
-main ul li a:nth-of-type(3) h3{
-    top: 8em
+main ul li:nth-of-type(2) a h3{
+    top: 5em;
 }
 
 main ul li a img:first-of-type{
@@ -226,14 +211,14 @@ main ul li a img:first-of-type{
 
 /*css voor categorien*/
 
-main section:nth-of-type(1){
+main.index section:nth-of-type(1){
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     margin-right: -1em;
 }
 
-main section:nth-of-type(1) a{
+main.index section:nth-of-type(1) a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,61 +226,70 @@ main section:nth-of-type(1) a{
     color: #333;
 }
 
-main section:nth-of-type(1) img{
+main.index section:nth-of-type(1) img{
     width: 8em;
     margin: 0.5em 1em 0 0;
 }
 
-main section:nth-of-type(1) p{
+main.index section:nth-of-type(1) p{
     margin-top: 0.2em;
     margin-left: -1em;
 }
 
 /*dagdeal*/
 
-main section.dagdeal {
+main.index section:nth-of-type(2) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1em 1em 0.5em 1em;
+    margin: 1em 0 0.5em 0;
     background-color: #fafafa;
 }
 
-main section.dagdeal h2{
-    color: red;
-    display: flex;
-    text-align: center;
-    width: 10ch;
+main.index section:nth-of-type(2) div:first-of-type{
     background-color: white;
-    padding: 0 1em;
-    margin: 0 0 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
     box-shadow: 1px 2px 4px 0 rgba(49,49,47,.3);
+    padding: 0.5em 1em;
+    color: red;
 }
 
-main section.dagdeal img{
+main.index section:nth-of-type(2) div:first-of-type h2{
+    color: red;
+    margin: 0;
+}
+
+main.index section:nth-of-type(2) div:first-of-type p{
+    font-size: 1em;
+}
+
+main.index section:nth-of-type(2) img{
     width: 8em;
     margin: 1em;
 }
 
-main section.dagdeal div{
+main.index section:nth-of-type(2) div{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-main section.dagdeal div p{
+main.index section:nth-of-type(2) div p{
     margin-top: 0.5em;
     margin-left: 0.5em;
     font-weight: bold;
     font-size: 0.85em;
 }
 
-main section.dagdeal div p:last-of-type{
+main.index section:nth-of-type(2) div p:last-of-type{
     opacity: 0.75;
     font-weight: normal;
 }
 
-main section.dagdeal div a{
+main.index section:nth-of-type(2) div a{
     background-color: #00f;
     color: white;
     text-align: center;
@@ -305,11 +299,13 @@ main section.dagdeal div a{
     margin: 1em 0.75em;
 }
 
-main a.paard{
+/*css voor het stukje populair speelgoed met het paard */
+
+main.index a.paard{
     position: relative;
 }
 
-main a.paard h2{
+main.index a.paard h2{
     position: absolute;
     margin: 0 0 0 1em;
     top: 2em;
@@ -317,38 +313,37 @@ main a.paard h2{
     color: #0000a4;
 }
 
-main a.paard h3{
+main.index a.paard h3{
     position: absolute;
     margin: 0 0 0 1.4em;
     top: 4.6em;
     z-index: 10;
 }
 
-main a.paard img:last-of-type{
-    padding-right: 1em;
+main.index a.paard img:last-of-type{
     padding-top: 1em;
 }
 
-main a.paard img:first-of-type{
+main.index a.paard img:first-of-type{
     position: absolute;
-    bottom: 2em;
-    margin-left: 2em;
+    bottom: 1.5em;
+    left: -12em
 }
 
-main a.link {
+main.index a.link {
     color: #00f;
     text-decoration: none;
     margin: 1em;
     font-size: 0.9em;
 }
 
-main a.link img{
+main.index a.link img{
     width: 0.5em;
     margin-right: 0.5em;
     margin-top: 0;
 }
 
-/*css voor het gedeelte met cadeaus voor iedereen*/
+/*css voor de ol's*/
 
 main ol{
     display: flex;
@@ -361,6 +356,7 @@ main ol{
 main ol li{
     margin: 0.5em 1em;
     text-align: center;
+    justify-content: center;
 }
 
 main ol li a p{
@@ -372,63 +368,89 @@ main ol li a img{
     width: 13em;
 }
 
-/*css voor het je bekeek section*/
-main a.jebekeek{
+/*css voor het stukje met cadeaus voor iedereen*/
+
+main.index ol.cadeausvi li a{
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+main.index ol.cadeausvi li a img{
+    width: 13em;
+    margin-left: 0;
+}
+
+main.index ol.cadeausvi li a p{
+width: 208px;
+}
+
+.index ol.cadeausvi li a:last-child{
+    margin-right: 0;
+
+}
+
+/*css voor een klein stukje waarin staat wat je bekeken hebt*/
+main.index a.jebekeek{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1em;
 }
 
-main h2{
-    margin-left: 0em;
-}
-
-main a.jebekeek p{
-    margin-left: 1em;
+main.index a.jebekeek p{
+    margin-left: 2em;
     color: #333;
     font-weight: 800;
     font-size: 0.8em;
 }
 
-main a.jebekeek img{
+main.index a.jebekeek img{
     margin-left: 1em;
     width: 6em;
 }
 
-main section ol{
+main.index section ol{
     overflow-x: scroll;
     margin-bottom: 0.5em;
     margin-left: -1em;
 }
 
-main section ol li a img{
+main.index section ol li a img{
     width: 15em;
 }
 
-main section.rba ol li a p{
+/*css voor de recent bekeken artikelen*/
+
+main.index section.rba ol li a p{
     text-align: left;
     font-weight: 800;
     width: 7ch;
 }
 
-main section.rba ol li a p:last-of-type{
+main.index section.rba ol li a p:last-of-type{
     color: red;
     font-weight: 400;
 }
 
-main section.rba ol li a img{
+main.index section.rba ol li a img{
     width: 10em;
 }
 
 /*css voor de section ook interessant*/
-main section.ookinteressant ol li a p {
+main.index section.ookinteressant ol li a p {
     text-align: left;
     font-weight: 800;
     font-size: 0.8em;
 }
 
-main section.ookinteressant ol li a p:last-of-type{
+main.index section.ookinteressant ol li{
+    margin-left: 2em;
+}
+
+main.index section.ookinteressant ol li a p:last-of-type{
     text-align: left;
     font-weight: 500;
 }
@@ -438,16 +460,14 @@ main section.ookinteressant ol li a p:last-of-type{
 
 
 /*css voor de sport detailpagina*/
-main a{
-    position: relative;
-}
+
 
 main.sport a h2{
     position: absolute;
     margin: 0 0 0 1em;
     font-size: 1.6em;
     width: 8ch;
-    top: 1em;
+    top: -7em;
     line-height: 1em;
     z-index: 10;
     color: #0000a4;
@@ -458,22 +478,22 @@ main.sport a h3{
     margin: 0 0 0 1em;
     width: 10ch;
     font-size: 1.5em;
-    top: 4em;
+    top: -4em;
     line-height: 0.9em;
     z-index: 10;
 }
 
-main a.banner img:last-of-type{
+main.sport a.banner img:last-of-type{
     padding-top: 1em;
 }
 
-main a.banner img:first-of-type{
+main.sport a.banner img:first-of-type{
     position: absolute;
     bottom: 1em;
     margin-left: 1.5em;
 }
 
-main section.opties{
+main.sport section:first-of-type{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -481,7 +501,7 @@ main section.opties{
     margin-right: -1em;
 }
 
-main section.opties a{
+main.sport section:first-of-type a{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -494,14 +514,23 @@ main section.opties a{
     margin-right: 1em;
 }
 
-main section.opties img{
+main.sport section:first-of-type img{
     width: 1em;
     margin: 0.5em 1em 0 0;
 }
 
 /*css voor de bolletjes met merken*/
 
-main section.merken ol li a img{
+main.sport section:nth-of-type(2) ol:first-of-type{
+    display: flex;
+    flex-direction: row;
+}
+
+main.sport section:nth-of-type(2) ol:first-of-type li{
+    border: none;
+}
+
+main.sport section:nth-of-type(2) ol:first-of-type li a img{
     width: 4em;
     padding: 0.5em;
     border-radius: 20em;
@@ -512,7 +541,7 @@ main section.merken ol li a img{
 
 /*css voor de blauwe filter knop*/
 
-main a.filter{
+main.sport a.filter{
     display: flex;
     justify-content: center;
     flex-basis: 100%;
@@ -523,7 +552,7 @@ main a.filter{
 
 /*css voor het sorteer gedeelte*/
 
-main span{
+main.sport span{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -531,16 +560,16 @@ main span{
     border-bottom: 2px solid #dadada;
 }
 
-main span img{
+main.sport span img{
     width: 1em;
     height: 1em;
 }
 
-main span button img{
+main.sport span button img{
     padding-left: 0.3em;
 }
 
-main span button{
+main.sport span button{
     display: flex;
     justify-content: space-between;
     border: 1px solid #333;
@@ -552,54 +581,55 @@ main span button{
 
 /*css voor de producten*/
 
-main ol.producten{
+main.sport ol:last-of-type{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
+    margin-left: 0em;
 }
 
-main ol.producten li{
+main.sport ol:last-of-type li{
     display: flex;
     padding: 1em 0;
     border-bottom: 2px solid #dadada;
 }
 
-main ol.producten li a:first-of-type{
+main.sport ol:last-of-type li a:first-of-type{
     display: flex;
     padding-right: 1em;
 }
 
-main ol.producten li a:last-of-type{
+main.sport ol:last-of-type li a:last-of-type{
     display: flex;
     flex-basis: 65%;
+    margin-left: 1em;
 }
 
-main ol.producten li a{
+main.sport ol:last-of-type li a{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-main ol.producten li a img{
+main.sport ol:last-of-type li a img{
     width: 5em;
     height: 4em;
 }
 
-main ol.producten li a p{
+main.sport ol:last-of-type li a p{
     font-size: 0.8em;
     text-align: left;
 }
 
-main ol.producten li a p:nth-of-type(2){
+main.sport ol:last-of-type li a p:nth-of-type(2){
     font-weight: bolder;
 }
 
-main ol.producten li a p:nth-of-type(3){
+main.sport ol:last-of-type li a p:nth-of-type(3){
     font-size: 0.7em;
 }
 
-main ol.producten li a span{
+main.sport ol:last-of-type li a span{
     display: flex;
     font-size: 0.7em;
     padding: 0;
@@ -608,13 +638,14 @@ main ol.producten li a span{
     border: none;
 }
 
-main ol.producten li a span img{
+main.sport ol:last-of-type li a span img{
     width: 6em;
     padding-right: 0.3em;
+    margin-left: 0;
 }
 
 /*css voor de prijs*/
-main ol.producten li a p:nth-of-type(4){
+main.sport ol:last-of-type li a p:nth-of-type(4){
     color: red;
     padding-right: 5em;
     font-size: 1.5em;
@@ -623,25 +654,27 @@ main ol.producten li a p:nth-of-type(4){
 }
 
 /*css voor de voorraad*/
-main ol.producten li a p:nth-of-type(6){
+main.sport ol:last-of-type li a p:nth-of-type(6){
     color: green;
     font-size: 0.8em;
 }
 
-main ol.producten li a p:nth-of-type(5){
+main.sport ol:last-of-type li a p:nth-of-type(5){
     color: green;
     font-weight: 600;
     padding: 0.2em 0.5em;
     border: 2px solid green;
 }
 
-main section.paginas{
+/*css voor de pagina's*/
+
+main.sport section:nth-of-type(3){
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
 }
 
-main section.paginas p{
+main.sport section:nth-of-type(3) a{
     width: 3em;
     display: flex;
     align-items: center;
@@ -651,12 +684,12 @@ main section.paginas p{
     border-radius: 0.5em;
 }
 
-main section.paginas p:first-child{
+main.sport section:nth-of-type(3) a:first-child{
     color: #333;
     font-weight: bold;
 }
 
-main section.paginas img{
+main.sport section:nth-of-type(3) img{
     width: 3em;
     background-color: #f0f6ff;
     padding: 1.2em;
@@ -664,9 +697,95 @@ main section.paginas img{
     border-bottom: 1px solid rgba(0,0,0,.35);
 }
 
+
+/*css voor het blauwe stukje verder kijken*/
+main.sport section:last-of-type{
+    background-color: #F0F6FF;
+    width: 100vw;
+    margin-left: -1em;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-top: 1em;
+}
+
+main.sport section:last-of-type h2{
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+main.sport section:last-of-type ol{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main.sport section:last-of-type ol li{
+    border: none;
+    padding: 0;
+}
+
+main.sport section:last-of-type ol li a{
+    display: flex;
+    flex: 1;
+    background-color: white;
+    padding: 0 0 0 2em;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 4px 0 rgba(49,49,47,.3);
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main.sport section:last-of-type ol li a div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.9em;
+}
+
+main.sport section:last-of-type ol li a div p{
+    font-size: 1em;
+}
+
+main.sport section:last-of-type ol li a img{
+    max-width: 1.5em;
+    margin: 0.5em;
+}
+
+main.sport section:last-of-type ol li:nth-of-type(2) a img:first-of-type{
+    max-width: 3em;
+    height: 2.5em;
+}
+
+main.sport section:last-of-type ol li:nth-of-type(3) a img:first-of-type{
+    max-width: 4em;
+}
+
+main.sport section:last-of-type ol li:nth-of-type(4) a img:first-of-type{
+    max-width: 2.5em;
+}
+
+
+main.sport section:last-of-type ol li a img:last-of-type{
+    width: 0.5em;
+}
+
+main.sport section:last-of-type button{
+    background-color: #00f;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+
 /*eindelijk bij de fooooteerrrrrrrr!!! Wohooooooo*/
 /*Het is trouwens css voor het lijstje ontdek alles bij bol.com
 en voor het lijstje onder het blauwe stukje service*/
+
+footer h2{
+    margin-left: 0.5em;
+}
 
 footer section ul{
     margin: 0 1em;
@@ -684,6 +803,9 @@ footer section ul li{
 }
 
 footer section ul li a{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: #333;
     font-size: 0.9em;
     align-content: center;
@@ -691,9 +813,6 @@ footer section ul li a{
 
 footer section ul li a img.pijlbeneden{
     width: 0.75em;
-    position: absolute;
-    right: 0.5em;
-    bottom: 1.5em;
 }
 
 /*css voor het stukje over mail*/
@@ -701,7 +820,6 @@ footer section.email{
     background: url("../images/email.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: -0.19em;
 }
@@ -888,6 +1006,13 @@ footer section.kleinelettertjes a{
 
 footer section.kleinelettertjes p:first-of-type{
     width: 30ch;
+}
+
+
+@media (min-width: 601px){
+    main{
+
+    }
 }
 
 

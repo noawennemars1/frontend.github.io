@@ -2,8 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bol.com | de winkel van ons allemaal</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,21 +12,21 @@
 <body>
     <header>
         <nav>
-            <img src="images/menu.svg" alt="menu" class="icoon">
-            <a href="index.html"><h1>bol.com</h1></a>
-                <ul>
-                    <li><img src="images/profiel.svg" alt="profiel" class="icoon"></li>
-                    <li><img src="images/harticoon.svg" alt="gelikte items" class="icoon"></li>
-                    <li><img src="images/winkelkar.svg" alt="winkelkar" class="icoon"></li>
-                </ul>
+            <ul>
+                <li><a href="index.html"><img src="images/menu.svg" alt="menu" class="icoon"></a></li>
+                <li><a href="index.html"><h1>bol.com</h1></a></li>
+                <li><a href="sport.html"><img src="images/profiel.svg" alt="profiel" class="icoon"></a></li>
+                <li><a href="sport.html"><img src="images/harticoon.svg" alt="gelikte items" class="icoon"></a></li>
+                <li><a href="sport.html"><img src="images/winkelkar.svg" alt="winkelkar" class="icoon"></a></li>
+            </ul>
+            <form role="search" action="#"><input type="text" placeholder="Waar ben je naar op zoek?"></form>
         </nav>
-        <form role="search" action="#"><input type="text" placeholder="Waar ben je naar op zoek?"></form>
     </header>
-    <main>
-        <a href="#"><img src="images/sinterklaas.jpg" alt="sinterklaas acties" class="sinterklaas"></a>
+    <main class="index">
+        <a href="sport.html"><img src="images/sinterklaas.jpg" alt="sinterklaas acties"></a>
         <ul>
             <li>
-                <a href="#">
+                <a href="sport.html">
                     <h2>Tot 30% korting*</h2>
                     <h3>Op rijdend speelgoed</h3>
                     <img src="images/pijltjerechts.svg" class="pijl" alt="pijltje naar rijdend speelgoed">
@@ -36,7 +35,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="sport.html">
                     <h2>Alles wat je nodig hebt</h2>
                     <h3>om thuis te sporten</h3>
                     <img src="images/pijltjerechts.svg" class="pijl" alt="pijltje naar rijdend speelgoed">
@@ -44,7 +43,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="sport.html">
                     <h2>30% korting op*</h2>
                     <h3>thuis en veiligheid</h3>
                     <img src="images/pijltjerechts.svg" class="pijl" alt="pijltje naar rijdend speelgoed">
@@ -59,30 +58,30 @@
                 <img src="images/sport.jpg" alt="sport">
                 <p>Sport</p>
             </a>
-            <a href="#">
+            <a href="sport.html">
                 <img src="images/speelgoed.jpg" alt="speelgoed">
                 <p>Speelgoed</p>
             </a>
-            <a href="#">
+            <a href="sport.html">
                 <img src="images/boeken.jpg" alt="boeken">
                 <p>Boeken</p>
             </a>
-         <a href="#">
+         <a href="sport.html">
              <img src="images/elektronica.jpg" alt="elektronica">
              <p>Elektronica</p>
          </a>
         </section>
-       <section class="dagdeal">
-           <h2>Dagdeal</h2>
+       <section>
+           <div><h2>Dagdeal</h2><p id="countdown"></p></div>
            <img src="images/dagdeal.jpg" alt="Just Dance 2021 dagdeal">
            <div>
                <p>Tot 35% korting op populaire games en speelgoed*</p>
                <p>*op de adviesprijs</p>
-               <a href="#">Naar de actie</a>
+               <a href="sport.html">Naar de actie</a>
            </div>
         </section>
-        <a href="#" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Ontvang elke dag de dagdeal</a>
-        <a href="#" class="paard">
+        <a href="sport.html" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Ontvang elke dag de dagdeal</a>
+        <a href="sport.html" class="paard">
             <h2>Het populairste speelgoed</h2>
             <h3>altijd scherp geprijsd</h3>
             <img src="images/pijltjerechts.svg" class="pijl" alt="pijltje naar rijdend speelgoed">
@@ -90,10 +89,11 @@
         </a>
         <section>
             <h2>Cadeaus voor iedereen</h2>
-            <ol>
-                <li><a href="#"><img src="images/voorhaar.png" alt="cadeaus voor haar"><p>Cadeaus voor haar</p></a></li>
-                <li><a href="#"><img src="images/voorhem.png" alt="cadeaus voor haar"><p>Cadeaus voor hem</p></a></li>
-                <li><a href="#"><img src="images/altijdgoed.png" alt="altijd goed cadeaus"><p>Altijd goed cadeaus</p></a></li>
+            <ol class="cadeausvi">
+                <li><a href="sport.html"><img src="images/voorhaar.png" alt="cadeaus voor haar"><p>Cadeaus voor haar</p></a></li>
+                <li><a href="sport.html"><img src="images/voorhem.png" alt="cadeaus voor haar"><p>Cadeaus voor hem</p></a></li>
+                <li><a href="sport.html"><img src="images/altijdgoed.png" alt="altijd goed cadeaus"><p>Altijd goed cadeaus</p></a></li>
+                <li><a href="sport.html"><img src="images/nessie.png" alt="verassende cadeaus"><p>Verassende cadeaus</p></a></li>
             </ol>
         </section>
         <h2>Je bekeek</h2>
@@ -105,48 +105,48 @@
             <h2>Recent bezochte artikelen</h2>
             <ol>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/uno.png" alt="UNO kaartspel">
                         <p>UNO Kaartspel</p>
                         <p>€8,94</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/skipbo.png" alt="Skip-bo kaartspel">
                         <p>Skip-bo Kaartspel</p>
                         <p>€14,99</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/qwixx.png" alt="Qwixx Dobbelspel">
                         <p>Qwixx Dobbelspel</p>
                         <p>€11,95</p>
                     </a>
                 </li>
             </ol>
-            <a href="#" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Bekijk al je persoonlijke aanbevelingen</a>
+            <a href="sport.html" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Bekijk al je persoonlijke aanbevelingen</a>
         </section>
         <section class="ookinteressant">
             <h2>Ook interessant</h2>
             <ol>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/foodbox.png" alt="foodbox">
                         <p>Smaakspecialist foodboxen</p>
                         <p>leuk als cadeau of voor jezelf</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/teabox.jpg" alt="teabox">
                         <p>Perfect cadeau voor theeliefhebbers</p>
                         <p>verwen jezelf of een dierbare</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         <img src="images/mascara.jpg" alt="Rimmel London Scandal'Eyes mascara">
                         <p>Rimmel London Scandal’Eyes mascara</p>
                         <p>get ready for Volume On Demand</p>
@@ -160,31 +160,31 @@
             <h2>Ontdek alles bij bol.com</h2>
             <ul>
                 <li>
-                    <a>
+                    <a href="sport.html">
                         Boeken
                         <img src="images/pijlbeneden.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         Muziek, Film & Games
                         <img src="images/pijlbeneden.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         Sport, Outdoor & Reizen
                         <img src="images/pijlbeneden.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         Computer & Elektronica
                         <img src="images/pijlbeneden.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sport.html">
                         Kantoor & School
                         <img src="images/pijlbeneden.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
@@ -194,37 +194,37 @@
         <section class="email">
             <h2>Op de hoogte blijven via email</h2>
             <h3>van voordeel, (win)acties en aanbevelingen?</h3>
-            <a href="#"><img src="images/envelop.svg" alt="envelop">ja, graag</a>
+            <a href="sport.html"><img src="images/envelop.svg" alt="envelop">ja, graag</a>
         </section>
         <section class="servicecontact">
             <h2>Service & contact</h2>
             <img src="images/profielwit.svg" alt="hulp nodig?">
             <div>
                 <p><strong>Snel regelen in je account</strong></p>
-                <p><a href="#">volg je bestelling</a> , <a href="#">betaal facturen</a> of <a href="#">retourneer een artikel</a>.</p>
+                <p><a href="sport.html">volg je bestelling</a> , <a href="sport.html">betaal facturen</a> of <a href="sport.html">retourneer een artikel</a>.</p>
             </div>
                 <img src="images/bolcomwolkjes.svg" alt="hulp nodig?">
              <div>
                 <p><strong>Heb je ons nodig?</strong></p>
-                <p>We helpen je graag. <a href="#">Onze klantenservice</a> is dag en nacht open.</p>
+                <p>We helpen je graag. <a href="sport.html">Onze klantenservice</a> is dag en nacht open.</p>
             </div>
         </section>
         <section>
             <ul>
                 <li>
-                    <a>
+                    <a href="sport.html">
                         Klantenservice
                         <img src="images/pijltjerechts-blauw.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="sport.html">
                         Over bol.com
                         <img src="images/pijltjerechts-blauw.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="sport.html">
                         Zakendoen met bol.com
                         <img src="images/pijltjerechts-blauw.svg" alt="boeken uitklappen" class="pijlbeneden">
                     </a>
@@ -232,7 +232,7 @@
             </ul>
         </section>
         <section class="app">
-            <a class="app">
+            <a  href="sport.html"class="app">
                 <img src="images/social-tile2.png" alt="social tile">
                 <div>
                     <p><strong>Makkelijker bol.com'en?</strong></p>
@@ -248,19 +248,19 @@
         <section class="socials">
             <h3>Wil je ons volgen?</h3>
             <div>
-                <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
-                <a href="#"><img src="images/pinterest.svg" alt="pinterest"></a>
-                <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
-                <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
-                <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
+                <a href="sport.html"><img src="images/facebook.svg" alt="facebook"></a>
+                <a href="sport.html"><img src="images/twitter.svg" alt="twitter"></a>
+                <a href="sport.html"><img src="images/pinterest.svg" alt="pinterest"></a>
+                <a href="sport.html"><img src="images/instagram.svg" alt="instagram"></a>
+                <a href="sport.html"><img src="images/youtube.svg" alt="youtube"></a>
+                <a href="sport.html"><img src="images/linkedin.svg" alt="linkedin"></a>
             </div>
-            <p><a>meld je aan</a> voor onze nieuwsbrief.</p>
+            <p><a href="sport.html">meld je aan</a> voor onze nieuwsbrief.</p>
         </section>
         <section class="beoordelingen">
             <div>
                 <p>Beoordeling door klanten</p>
-                <p><strong>3</strong> van de 5 - <a>30494 beoordelingen</a></p>
+                <p><strong>3</strong> van de 5 - <a href="sport.html">30494 beoordelingen</a></p>
             </div>
             <div>
                 <img src="images/postnl.png" alt="PostNl"> <!-- bron afbeelding PostNL: https://www.postnl.nl/ --!>
@@ -271,10 +271,11 @@
             <img src="images/bol.png" alt="logo bol.com met de tekst: de winkel van ons allemaal"> <!-- bron afbeelding: https://www.thuiswinkel.org/consumenten/wat-is-thuiswinkel-waarborg--!>
             <img src="images/thuiswinkel.png" alt="Thuiswinkel Waarborg"> <!-- bron afbeelding: https://www.bol.com/nl/ --!>
             <p>geld voor aankopen bij <a>Thuiswinkel-leden</a></p>
-            <p><a href="#">| Algemene voorwaarden </a><a href="#"></a> | Privacy <a href="#">| Cookies </a><a href="#"></a> | <a>©1999-2020 bol.com bv</a></p>
-            <p>* De voordelen van bol.com gelden niet voor het gehele assortiment. <a href="#">Bekijk de voorwaarden.</a></p>
-            <p>Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele <a href="#">verzendkosten</a> en <a href="#">servicekosten.</a></p>
+            <p><a href="sport.html">| Algemene voorwaarden </a><a href="sport.html"></a> | Privacy <a href="sport.html">| Cookies </a><a href="sport.html"></a> | <a>©1999-2020 bol.com bv</a></p>
+            <p>* De voordelen van bol.com gelden niet voor het gehele assortiment. <a href="sport.html">Bekijk de voorwaarden.</a></p>
+            <p>Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele <a href="sport.html">verzendkosten</a> en <a href="sport.html">servicekosten.</a></p>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

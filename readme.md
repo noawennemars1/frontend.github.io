@@ -39,6 +39,11 @@ De dingen waar ik bij voortgang 1 tegenaan liep, heb ik inmiddels opgelost. Nu m
 
 <img src="images/voortgang2-sport.png" width="375px" alt="sportartikelen pagina op bol.com">
 
+| Samantha(ik)                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat mijn animatie bij 10 graden begint? | Hoe maak ik een hamburger menu? |Wat is frontend?  | Ik heb een vraag over de scaling van de tekst en de video              | Geen vraag|
+| ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
+
 ### Verslag van meeting
 
 ## Voortgang 1 (week 3)

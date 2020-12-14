@@ -46,6 +46,8 @@ De dingen waar ik bij voortgang 1 tegenaan liep, heb ik inmiddels opgelost. Nu m
 
 ### Verslag van meeting
 
+Tijdens de voortgang had de studentassistent naar mijn mening niet heel nuttige input over hoe ik mijn problemen kon oplossen. Daarom ga ik andere studenten vragen of ze mij nog kunnen helpen met een aantal dingen.
+
 ## Voortgang 1 (week 3)
 Het ging tot nu toe wel best goed. Er zijn een aantal dingen waar ik hulp bij heb gehad van een medestudent. Ik heb hulp gehad bij het positioneren van de tekst over de afbeeldingen heen in de main. Dit is nog niet helemaal gefixt, dus daar moet ik nog mee bezig.
 Daarnaast heb ik nog hulp gehad bij het positioneren van het icoon naast de tekst in het blauwe stukje van de footer. 

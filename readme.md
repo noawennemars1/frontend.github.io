@@ -23,8 +23,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 3 (week 6)
+De dingen waar ik bij voortgang 2 tegenaan liep, heb ik nog niet helemaal opgelost. Ik ben intussen wel begonnen met het hamburgermenu. Ik weet nog niet hoe ik ervoor ga zorgen dat het menu over de rest van de inhoud van de pagina komt. Ik heb nog niet eerder een hamburgermenu gemaakt, dus dat is ook nog nieuw voor mij. Wel heb ik al een heel klein beetje gedaan aan het responsive maken, maar dat is nog bijna niet benoemenswaardig.
 
--same as voortgang 1-
+**Screenshot(s) van de eerste pagina (small screen):**
+
+<img src="images/voortgang3-home.png" width="375px" alt="homepagina van bol.com">
+
+**Screenshot(s) van de tweede pagina (small screen):**
+
+<img src="images/voortgang3-sport.png" width="375px" alt="sportartikelen pagina op bol.com">
 
 
 
@@ -45,8 +52,8 @@ De dingen waar ik bij voortgang 1 tegenaan liep, heb ik inmiddels opgelost. Nu m
 | ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
 
 ### Verslag van meeting
-
-Tijdens de voortgang had de studentassistent naar mijn mening niet heel nuttige input over hoe ik mijn problemen kon oplossen. Daarom ga ik andere studenten vragen of ze mij nog kunnen helpen met een aantal dingen.
+Tijdens de voortgang had de studentassistent naar mijn mening niet heel nuttige input over hoe ik mijn problemen kon oplossen. Ik weet niet veel meer dan voor de meeting. 
+Daarom ga ik andere studenten vragen of ze mij nog kunnen helpen met een aantal dingen.
 
 ## Voortgang 1 (week 3)
 Het ging tot nu toe wel best goed. Er zijn een aantal dingen waar ik hulp bij heb gehad van een medestudent. Ik heb hulp gehad bij het positioneren van de tekst over de afbeeldingen heen in de main. Dit is nog niet helemaal gefixt, dus daar moet ik nog mee bezig.

@@ -79,14 +79,14 @@ header h1{
 }
 
 /*De navigatiebalk wordt hier opgemaakt*/
-header nav{
+header nav:first-of-type{
     display: flex;
     justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
 }
 
-header nav ul{
+header nav:first-of-type ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,29 +94,29 @@ header nav ul{
     padding: 1em 0;
 }
 
-header nav ul li{
+header nav:first-of-type ul li{
     list-style: none;
     margin: 0 0.4em;
     align-self: center;
 }
 
-header nav ul li:nth-of-type(2){
+header nav:first-of-type ul li:nth-of-type(2){
     display: flex;
     flex-grow: 2;
 }
 
-header nav a {
+header nav:first-of-type a {
     color: #0000a4;
     text-decoration: none;
 }
 
-header nav img{
+header nav:first-of-type img{
     width: 1.5em;
     height: 1.5em;
 }
 
 /*zoekbalk*/
-header nav form{
+header nav:first-of-type form{
     display: flex;
     justify-content: center;
     background-color: #0000a4;
@@ -124,7 +124,7 @@ header nav form{
     width: 100vw;
 }
 
-header nav form input{
+header nav:first-of-type form input{
     background-image: url("../images/zoekicoon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -139,10 +139,75 @@ header nav form input{
     padding: 1.3em 1em;
 }
 /*zoekbalk tekst*/
-header nav form input::placeholder{
+
+header nav:first-of-type form input::placeholder{
     color: black;
     opacity: 0.5;
 }
+
+/*css voor het menu dat openklapt*/
+
+header nav:last-of-type{
+    background-color: white;
+    /*transform: translateX(-100%);*/
+}
+
+header nav:last-of-type span.sluiten{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    border-bottom: 1px solid #333;
+    position: fixed;
+    z-index: 9999;
+}
+
+header nav:last-of-type span.sluiten img{
+
+}
+
+header nav:last-of-type ol:first-of-type{
+    list-style: none;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+header nav:last-of-type ol:first-of-type li{
+    margin: 0.5em 0;
+}
+
+header nav:last-of-type ol:first-of-type li span{
+    background-color: #f0f6ff;
+    padding: 1.5em;
+    border-radius: 5em;
+    margin-bottom: 1em;
+}
+
+header nav:last-of-type ol:first-of-type li span img{
+    height: 1.5em;
+}
+
+header nav:last-of-type ol:first-of-type li a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+    width: 6em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+header nav div{
+    border: 1px solid #333;
+    background-color: #fafafa;
+    width: 100vw;
+    height: 1.5em;
+}
+
 
 /*css voor de homepage*/
 
@@ -1010,8 +1075,19 @@ footer section.kleinelettertjes p:first-of-type{
 
 
 @media (min-width: 601px){
-    main{
+    header nav:last-of-type{
+        display: none;
+    }
 
+    main{
+        margin: 0 4em;
+    }
+
+    main img:first-of-type {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        margin: 0 auto;
     }
 }
 

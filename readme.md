@@ -33,7 +33,13 @@ De dingen waar ik bij voortgang 2 tegenaan liep, heb ik nog niet helemaal opgelo
 
 <img src="images/voortgang3-sport.png" width="375px" alt="sportartikelen pagina op bol.com">
 
+| Samantha(ik)                                        | Noa                                                     | Nicole                                | Maylinn          | Stein         |
+| ---                                                 | ---                                                     | ---                                   | ---              | ---           |
+| Hoe kan je slomer scrollen?                         | Hoe krijg ik mijn menu over de rest van de content?     | Mag ik ook andere iconen gebruiken?   | geen vraag       | Geen vraag    |
+| scrollbar weghalen en laten werken op desktop       | ---                                                     | ---                                   | ---              | ---           |
+| js pathname voor code inladen werkt niet online     | ---                                                     | ---                                   | ---              | ---           |
 
+### Verslag van meeting
 
 ## Voortgang 2 (week 5)
 De dingen waar ik bij voortgang 1 tegenaan liep, heb ik inmiddels opgelost. Nu moet ik het hamburger menu maken en zorgen dat het responsive wordt. Ook heb ik al een beetje javascript toegevoegd. 

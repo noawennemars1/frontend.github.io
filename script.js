@@ -13,3 +13,14 @@ var tijd = setInterval(function () { //om elke seconden de tijd up te daten
         document.getElementById("countdown").innerHTML = "afgelopen";
     }
 })
+
+var menuIcoon = document.querySelector('#menuIcoon');
+var nav = document.querySelector('#menu');
+
+function openMenu() {
+    nav.classList.toggle('toonnav');
+}
+
+menuIcoon.addEventListener("click", openMenu);
+
+

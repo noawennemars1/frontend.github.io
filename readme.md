@@ -21,6 +21,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -screenshot(s) van je eindresultaat-
 
 
+## screenreader test 
+Tijdens de screenreader test kwam ik erachter de knoppen met gewone tekst duidelijk zijn, maar die alleen met een pijltje nog niet. Daarom heb ik deze aangepast en heb ik een andere alt-tekst gegeven aan de afbeeldingen in de knoppen.
+Wel was het duidelijk hoe de zoekbalk werkt en wat voor inhoud de sections hebben. De foto's hadden een duidelijke omschrijving.
+
 
 ## Voortgang 3 (week 6)
 De dingen waar ik bij voortgang 2 tegenaan liep, heb ik nog niet helemaal opgelost. Ik ben intussen wel begonnen met het hamburgermenu. Ik weet nog niet hoe ik ervoor ga zorgen dat het menu over de rest van de inhoud van de pagina komt. Ik heb nog niet eerder een hamburgermenu gemaakt, dus dat is ook nog nieuw voor mij. Wel heb ik al een heel klein beetje gedaan aan het responsive maken, maar dat is nog bijna niet benoemenswaardig.

@@ -9,18 +9,41 @@
     <link rel="stylesheet" href="https://use.typekit.net/tzr4lbt.css"> <!-- bron font: https://fonts.adobe.com/fonts/bree-serif#fonts-section --!>
     <link rel="shortcut icon" href="images/social-tile.png" type="image/x-icon"/> <!-- bron icoon: https://www.bol.com/nl/ --!>
 </head>
-<body>
+<body id="body">
     <header>
+        <!--Dit is het menu--!>
        <nav>
-            <ul>
-                <li><a><img src="images/menu.svg" alt="menu" class="icoon" id="menuIcoon"></a></li>
-                <li><a href="index.html"><h1>bol.com</h1></a></li>
-                <li><a href="sport.html"><img src="images/profiel.svg" alt="profiel" class="icoon"></a></li>
-                <li><a href="sport.html"><img src="images/harticoon.svg" alt="gelikte items" class="icoon"></a></li>
-                <li><a href="sport.html"><img src="images/winkelkar.svg" alt="winkelkar" class="icoon"></a></li>
-            </ul>
-            <form role="search" action="#"><input type="text" placeholder="Waar ben je naar op zoek?"></form>
+           <div>
+               <a href="sport.html"><strong>Gratis</strong> verzending vanaf 20,-
+                   Bezorging dezelfde dag, 's avonds of in het weekend*
+                   <strong>Gratis</strong> retourneren
+               </a>
+               <a href="sport.html"><strong>Select</strong> Ontdek het nu voor 9,99 p.j.</a>
+           </div>
+           <div>
+            <a><img src="images/menu.svg" alt="menu" class="icoon" id="menuIcoon"></a>
+                <a href="index.html"><h1>bol.com</h1></a>
+               <form role="search" action="#"><input type="text" placeholder="Waar ben je naar op zoek?"></form>
+                <a href="sport.html"><svg><path d="M12 24c-3 0-7.1-.7-9-2.5-.6-.6-1-1.4-1-2.2 0-3.8 2.6-7.2 6.3-8.6C6.9 9.6 6 7.9 6 6c0-3.3 2.7-6 6-6s6 2.7 6 6c0 1.9-.9 3.6-2.3 4.7 3.6 1.4 6.3 4.8 6.3 8.6 0 3.4-6 4.7-10 4.7zm0-12c-4.3 0-8 3.3-8 7.3 0 .1 0 .4.4.7 1.1 1.1 4.3 2 7.6 2 4.5 0 8-1.5 8-2.7 0-4-3.7-7.3-8-7.3zm0-10C9.8 2 8 3.8 8 6s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"></path></svg></a>
+                <a href="sport.html"><svg><path d="M12 23.2l-.6-.4C3.5 17.2 0 12.9 0 9c0-3.5 2-6.7 4.9-7.9C7.3.2 9.8.7 12 2.6 14.2.7 16.7.2 19.1 1.1 22 2.3 24 5.5 24 9c0 3.9-3.5 8.2-11.4 13.8l-.6.4zM7.3 2.7c-.6 0-1.1.1-1.6.3C3.6 3.8 2 6.4 2 9c0 3 3.3 6.9 10 11.8C18.7 15.9 22 12 22 9c0-2.6-1.6-5.2-3.7-6-1.8-.7-3.8-.2-5.6 1.7l-.7.7-.7-.7c-1.3-1.3-2.7-2-4-2z"></path></svg></a>
+                <a href="sport.html"><svg><path d="M23.9 6.5c0-.8-.7-1.5-1.5-1.5H5.8l-1-4H1c-.6 0-1 .4-1 1s.4 1 1 1h2.2L4 6.2l2.9 11.6c-.5.6-.9 1.4-.9 2.2 0 1.7 1.3 3 3 3s3-1.3 3-3c0-.4-.1-.7-.2-1h4.4c-.1.3-.2.6-.2 1 0 1.7 1.3 3 3 3s3-1.3 3-3c0-.9-.4-1.6-.9-2.2l2.7-11c0-.1.1-.2.1-.3zM10 20c0 .6-.4 1-1 1s-1-.4-1-1 .4-1 1-1 1 .4 1 1zm9 1c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm.2-4H8.8L6.3 7h15.4l-2.5 10z"></path></svg></a>
+           </div>
+           <div>
+               <div>
+               <a href="sport.html">categorieen ></a>
+               <a href="sport.html">cadeaus & inspiratie ></a>
+               <a href="sport.html">aanbiedingen ></a>
+               </div>
+               <div>
+                   <a href="sport.html">zakelijk</a>
+                   <a href="sport.html">cadeakaart</a>
+                   <a href="sport.html">bestelstatus</a>
+                   <a href="sport.html">klantenservice</a>
+                   <a href="sport.html">nl ></a>
+               </div>
+           </div>
         </nav>
+        <!--Dit is het menu voor op mobiel met het hamburgermenu--!>
         <nav id="menu">
             <div>
             <span class="sluiten">
@@ -49,8 +72,8 @@
             </ol>
             <div class="stukjetussen"></div>
             <ol>
-                <li><a href="sport.html"><img src="images/profiel-in-nav.png" alt="profiel">Welkom Noa<p>mijn account</p></a></li>
-                <li><a href="sport.html"><img src="images/klantenservice-icoon.png" alt="klantenservice"> Klantenservice</a></li>
+                <li><a href="sport.html"><img src="images/profiel-in-nav.png" alt="profiel" class="menuimg">Welkom Noa<p>mijn account</p></a></li>
+                <li><a href="sport.html"><img src="images/klantenservice-icoon.png" alt="klantenservice" class="menuimg"> Klantenservice</a></li>
                 <li><a href="sport.html">kies jouw winkel</a></li>
             </ol>
             <div class="stukjetussen"></div>
@@ -62,8 +85,11 @@
             </div>
         </nav>
     </header>
+    <!--Hier begint de inhoud van de pagina--!>
     <main class="index">
+        <!--Hier staat de grote foto onder de navigatie--!>
         <a href="sport.html"><img src="images/sinterklaas.jpg" alt="sinterklaas acties"></a>
+        <!--Dit is het lijstje met aanbiedingen onder de grote foto--!>
         <ul>
             <li>
                 <a href="sport.html">
@@ -92,6 +118,7 @@
                 </a>
             </li>
         </ul>
+        <!--Hier staan de categorieën die onder de aanbiedingen staan--!>
    <h2>Kies een categorie</h2>
      <section>
             <a href="sport.html">
@@ -110,10 +137,29 @@
              <img src="images/elektronica.jpg" alt="elektronica">
              <p>Elektronica</p>
          </a>
+         <a href="sport.html">
+             <img src="images/wonen.jpg" alt="wonen">
+             <p>Wonen</p>
+         </a>
+         <a href="sport.html">
+             <img src="images/baby.jpg" alt="baby">
+             <p>Baby</p>
+         </a>
+         <a href="sport.html">
+             <img src="images/kokenentafelen.jpg" alt="koken en tafelen">
+             <p>Koken en tafelen</p>
+         </a>
+         <a href="sport.html">
+             <img src="images/beauty.jpg" alt="beauty producten">
+             <p>Beauty</p>
+         </a>
         </section>
+        <!--Dit is de dagdeal--!>
        <section>
-           <div><h2>Dagdeal</h2><p id="countdown"></p></div>
-           <img src="images/dagdeal.jpg" alt="Just Dance 2021 dagdeal">
+           <div>
+               <div><h2>Dagdeal</h2><p id="countdown"></p></div>
+               <img src="images/dagdeal.jpg" alt="Just Dance 2021 dagdeal">
+           </div>
            <div>
                <p>Tot 35% korting op populaire games en speelgoed*</p>
                <p>*op de adviesprijs</p>
@@ -121,12 +167,14 @@
            </div>
         </section>
         <a href="sport.html" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Ontvang elke dag de dagdeal</a>
+        <!--Dit is weer een aanbieding--!>
         <a href="sport.html" class="paard">
             <h2>Het populairste speelgoed</h2>
             <h3>altijd scherp geprijsd</h3>
             <img src="images/pijltjerechts.svg" class="pijl" alt="pijltje naar rijdend speelgoed">
             <img src="images/paard-sinterklaas.png" alt="sinterklaas acties">
         </a>
+        <!--Dit is een lijstje met allemaal ideeën voor cadeautjes--!>
         <section>
             <h2>Cadeaus voor iedereen</h2>
             <ol class="cadeausvi">
@@ -136,11 +184,13 @@
                 <li><a href="sport.html"><img src="images/nessie.png" alt="verassende cadeaus"><p>Verassende cadeaus</p></a></li>
             </ol>
         </section>
+        <!--Hier staat een stukje met het item wat je als laatst hebt bekeken--!>
         <h2>Je bekeek</h2>
         <a class="jebekeek">
             <img src="images/qwixx.jpg" alt="Qwixx Dobbelspel">
             <p>Qwixx - Het dobbelspel</p>
         </a>
+        <!--Dit is een lijst met allemaal items die je recent bekeken hebt--!>
         <section class="rba">
             <h2>Recent bezochte artikelen</h2>
             <ol>
@@ -168,6 +218,7 @@
             </ol>
             <a href="sport.html" class="link"><img src="images/pijltjerechts-blauw.svg" alt="pijltje ontvang elke dag de dagdeal">Bekijk al je persoonlijke aanbevelingen</a>
         </section>
+        <!--Dit is een lijst met cadeau ideeën voor de klant--!>
         <section class="ookinteressant">
             <h2>Ook interessant</h2>
             <ol>
@@ -195,7 +246,9 @@
             </ol>
         </section>
     </main>
+    <!--Hier begint de footer--!>
     <footer>
+        <!--Dit is een lijst met categorieën die bol.com heeft--!>
         <section>
             <h2>Ontdek alles bij bol.com</h2>
             <ul>
@@ -231,11 +284,13 @@
                 </li>
             </ul>
         </section>
+        <!--Dit is een stukje waar je je kan inschrijven voor emails van bol.com--!>
         <section class="email">
             <h2>Op de hoogte blijven via email</h2>
             <h3>van voordeel, (win)acties en aanbevelingen?</h3>
             <a href="sport.html"><img src="images/envelop.svg" alt="envelop">ja, graag</a>
         </section>
+        <!--Dit is het stukje waar contactgegevens en servicegegevens staan van bol.com voor de gebruiker--!>
         <section class="servicecontact">
             <h2>Service & contact</h2>
             <img src="images/profielwit.svg" alt="hulp nodig?">
@@ -249,6 +304,7 @@
                 <p>We helpen je graag. <a href="sport.html">Onze klantenservice</a> is dag en nacht open.</p>
             </div>
         </section>
+        <!--Dit is een lijstje met informatie voor de klant--!>
         <section>
             <ul>
                 <li>
@@ -271,6 +327,7 @@
                 </li>
             </ul>
         </section>
+        <!--Hier staat het stukje met de aanbeveling voor de app--!>
         <section class="app">
             <a href="sport.html" class="app">
                 <img src="images/social-tile2.png" alt="social tile">
@@ -285,6 +342,7 @@
             </a>
             <button type="button">Download nu</button>
         </section>
+        <!--Dit is het stukje met social media--!>
         <section class="socials">
             <h3>Wil je ons volgen?</h3>
             <div>
@@ -297,6 +355,7 @@
             </div>
             <p><a href="sport.html">meld je aan</a> voor onze nieuwsbrief.</p>
         </section>
+        <!--Dit is het stukje waar de beoordelingen staan--!>
         <section class="beoordelingen">
             <div>
                 <p>Beoordeling door klanten</p>
@@ -306,6 +365,7 @@
                 <img src="images/postnl.png" alt="PostNl"> <!-- bron afbeelding PostNL: https://www.postnl.nl/ --!>
                 <img src="images/bpost.jpg" alt="Bpost"> <!-- bron afbeelding Bpost: https://www.engineetech365.com/en/company/bpost/ --!>
             </div>
+        <!--Dit is het stukje met kleine lettertjes--!>
         </section>
         <section class="kleinelettertjes">
             <img src="images/bol.png" alt="logo bol.com met de tekst: de winkel van ons allemaal"> <!-- bron afbeelding: https://www.thuiswinkel.org/consumenten/wat-is-thuiswinkel-waarborg--!>
@@ -316,6 +376,7 @@
             <p>Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele <a href="sport.html">verzendkosten</a> en <a href="sport.html">servicekosten.</a></p>
         </section>
     </footer>
+    <!--Hier wordt de javascript ingeladen--!>
     <script src="script.js"></script>
 </body>
 </html>

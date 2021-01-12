@@ -16,9 +16,11 @@ var tijd = setInterval(function () { //om elke seconden de tijd up te daten
 
 var menuIcoon = document.querySelector('#menuIcoon');
 var nav = document.querySelector('#menu');
+var body = document.querySelector('body')
 
 function openMenu() {
     nav.classList.toggle('toonnav');
+    body.classList.toggle('nietscrollen');
 }
 
 menuIcoon.addEventListener("click", openMenu);

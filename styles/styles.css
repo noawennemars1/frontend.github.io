@@ -60,15 +60,14 @@ a img.pijl{
     max-width: 2em;
 }
 
-main{
-    margin: 0 1em 0 1em;
-}
+
 
 header{
     width: 100vw;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
+    height: 8em;
 }
 
 header h1{
@@ -76,34 +75,61 @@ header h1{
     font-weight: bolder;
     font-size: 2.3em;
     line-height: .5em;
+    margin-left: .2em;
+}
+
+main{
+    padding: 0 1em;
+}
+
+/*Hier zorg ik ervoor dat er geen scrollbar is te zien wanneer je kan scrollen*/ /*bron: https://dev.to/ashwamegh/how-to-hide-scrollbar-from-any-html-element-dae geraadpleegd op 8-1-2021*/
+ul::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+ol::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+section::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+/*css voor het bovenste stukje van de navigatie*/
+header nav:first-of-type > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header nav:first-of-type > div:first-of-type > a {
+    font-size: .8em;
+}
+
+header nav:first-of-type > div:first-of-type > a:last-of-type {
+    color: green;
 }
 
 /*De navigatiebalk wordt hier opgemaakt*/
-header nav:first-of-type{
+header nav:first-of-type > div:nth-of-type(2){
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-header nav:first-of-type ul{
-    display: flex;
+    flex-direction: row;
     align-items: center;
+    background-color: #0000a4;
     justify-content: space-between;
-    flex-basis: 100%;
-    padding: 1em 0;
+    position: relative;
+    width: 100vw;
 }
 
-header nav:first-of-type ul li{
-    list-style: none;
-    margin: 0 0.4em;
-    align-self: center;
+header nav:first-of-type > div:nth-of-type(2) svg{
+    height: 25px;
+    width: 25px;
+    fill: white;
 }
 
-header nav:first-of-type ul li:nth-of-type(2){
-    display: flex;
-    flex-grow: 2;
-}
 
 header nav:first-of-type a {
     color: #0000a4;
@@ -119,7 +145,6 @@ header nav:first-of-type img{
 header nav:first-of-type form{
     display: flex;
     justify-content: center;
-    background-color: #0000a4;
     padding: .8em 0;
     width: 100vw;
 }
@@ -145,6 +170,34 @@ header nav:first-of-type form input::placeholder{
     opacity: 0.5;
 }
 
+header nav:first-of-type > div:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+}
+
+header nav:first-of-type > div:nth-of-type(3) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav:first-of-type > div:nth-of-type(3) > div:first-of-type {
+    width: 25vw;
+}
+
+header nav:first-of-type > div:nth-of-type(3) > div:last-of-type {
+    width: 20vw;
+}
+
+header nav:first-of-type > div:nth-of-type(3) a{
+    color: grey;
+    font-size: .7em;
+}
+
 /*css voor het menu dat openklapt*/
 
 header nav:last-of-type{
@@ -158,10 +211,21 @@ header nav:last-of-type{
     height: 100vh;
 }
 
+/*classes die worden toegewezen aan de html wanneer er op het hamburgermenu icoontje wordt geklikt*/
 .toonnav {
     transform: translateX(0)!important;
 }
 
+.nietscrollen {
+    overflow: hidden;
+}
+
+/*css voor de afbeeldingen in het hamburgermenu*/
+.menuimg{
+    width: 1.5em;
+}
+
+/*css voor het kruisje waarmee je het menu sluit*/
 header nav:last-of-type div span.sluiten{
     width: 100vw;
     display: flex;
@@ -177,21 +241,23 @@ header nav:last-of-type span.sluiten img{
     margin: 0.5em;
 }
 
+/*css voor de pijltjes in het menu*/
 img.pijlnav{
     width: 1.5em;
     height: 1.5em;
 }
 
+/*css voor lijstje met categorien in het menu */
 header nav:last-of-type div ol:first-of-type{
     list-style: none;
     display: flex;
     width: 100vw;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 3em 1em 1em 1em;
 }
 
-header nav:last-of-type div ol:first-of-type li{
+header nav:last-of-type div ol:first-of-type > li{
     margin: 0.5em 0;
 }
 
@@ -226,12 +292,15 @@ header nav div div.stukjetussen{
     height: 1.5em;
 }
 
+header nav:last-of-type div ol:nth-of-type(2) li{
+    border-bottom: 1px solid grey;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
 
 /*css voor de homepage*/
-
-main{
-    z-index: 0;
-}
 
 /*main img van Sinterklaas*/
 main img:first-of-type {
@@ -333,7 +402,7 @@ main.index section:nth-of-type(2) {
     background-color: #fafafa;
 }
 
-main.index section:nth-of-type(2) div:first-of-type{
+main.index section:nth-of-type(2) div:first-of-type > div{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -676,6 +745,8 @@ main.sport ol:last-of-type{
 
 main.sport ol:last-of-type li{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 1em 0;
     border-bottom: 2px solid #dadada;
 }
@@ -717,6 +788,7 @@ main.sport ol:last-of-type li a p:nth-of-type(3){
 
 main.sport ol:last-of-type li a span{
     display: flex;
+    width: 3em;
     font-size: 0.7em;
     padding: 0;
     height: 2em;
@@ -731,7 +803,7 @@ main.sport ol:last-of-type li a span img{
 }
 
 /*css voor de prijs*/
-main.sport ol:last-of-type li a p:nth-of-type(4){
+main.sport ol:last-of-type li a div:last-of-type p:first-of-type{
     color: red;
     padding-right: 5em;
     font-size: 1.5em;
@@ -739,8 +811,25 @@ main.sport ol:last-of-type li a p:nth-of-type(4){
     font-family: 'bree-serif', 'Graphik', sans-serif;
 }
 
+main.sport ol:last-of-type li > button{
+    width: 5em;
+    height: 3em;
+    border: none;
+    background-color: #ffe900;
+    margin-left: 1em;
+}
+
+main.sport ol:last-of-type li > button img{
+    padding: 0.2em;
+}
+
+main.sport ol:last-of-type li > button img{
+    width: 3em;
+    height: 1.5em;
+}
+
 /*css voor de voorraad*/
-main.sport ol:last-of-type li a p:nth-of-type(6){
+main.sport ol:last-of-type li a div:last-of-type p:nth-of-type(3){
     color: green;
     font-size: 0.8em;
 }
@@ -829,8 +918,10 @@ main.sport section:last-of-type ol li a div{
     line-height: 0.9em;
 }
 
-main.sport section:last-of-type ol li a div p{
-    font-size: 1em;
+main.sport section:last-of-type ol li a div p:first-of-type{
+    font-size: 1em!important;
+    color: grey!important;
+    font-family: 'Graphik', Arial, Helvetica, sans-serif !important;
 }
 
 main.sport section:last-of-type ol li a img{
@@ -866,9 +957,9 @@ main.sport section:last-of-type button{
 
 
 /*eindelijk bij de fooooteerrrrrrrr!!! Wohooooooo*/
-/*Het is trouwens css voor het lijstje ontdek alles bij bol.com
-en voor het lijstje onder het blauwe stukje service*/
 
+
+/*Dit is css voor het lijstje ontdek alles bij bol.com en voor het lijstje onder het blauwe stukje service*/
 footer h2{
     margin-left: 0.5em;
 }
@@ -1094,26 +1185,296 @@ footer section.kleinelettertjes p:first-of-type{
     width: 30ch;
 }
 
-
-@media (min-width: 601px){
-    header nav:last-of-type{
-        display: none;
+@media (min-width: 900px){
+    h1, h2{
+      font-size: 1.1em;
     }
 
+    p{
+        font-size: 0.7em;
+    }
+    /*css voor de navigatie wanneer kleine schermen*/
+    header nav:first-of-type > div{
+        width: 100vw;
+        padding-left:15vw;
+        padding-right:15vw;
+    }
+
+    header nav:first-of-type > div:nth-of-type(2) a {
+        color: white;
+    }
+
+    header nav:first-of-type > div:nth-of-type(2) a:first-of-type {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /*css voor de gehele pagina wanneer het scherm kleiner is*/
     main{
         margin: 0 4em;
     }
 
+    /*css voor de sinterklaas afbeelidng*/
     main img:first-of-type {
         display: flex;
         justify-content: center;
         width: 80vw;
         margin: 0 auto;
     }
+
+    /*css voor de tekst bij linkjes*/
+    main ol li a p{
+        font-size: 1em;
+    }
+
+    /*css voor de tekst in de aanbiedingen*/
+    main ul li a h3{
+        top: 2em;
+    }
+
+    main ul li:nth-of-type(2) a h3{
+        top: 2em;
+    }
+
+    main ul li a img:last-of-type{
+        width: 12em;
+    }
+
+    main.index section:nth-of-type(1) img{
+        width: 5em;
+    }
+
+    main.index section:nth-of-type(2){
+        display: flex;
+        flex-direction: row;
+    }
+
+    main.index section:nth-of-type(2) div:nth-of-type(2){
+        margin-left: -15em;
+    }
+
+    main.index section:nth-of-type(2) div:first-of-type > div{
+        margin-left: 15em;
+    }
+
+    main.index section:nth-of-type(2) img{
+        margin: 1em 3em;
+        width: 6em;
+    }
+
+    main.index a.paard img:last-of-type{
+        width: 80vw;
+        height: 25em
+    }
+
+    main.index a.jebekeek{
+        width: 10em;
+    }
+
+    footer section.servicecontact{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /*css voor de sport pagina*/
+
+    main.sport a.banner img:last-of-type{
+        width: 80vw;
+        height: 45vh;
+    }
+
+    main.sport a h2{
+        top: -9em;
+    }
+
+    main.sport a h3{
+        top: -6em;
+    }
+
+    main.sport ol:last-of-type > li a img{
+        height: 7em;
+        width: 10em;
+    }
+
+    main.sport section:nth-of-type(2) ol:first-of-type li a img{
+        width: 4em;
+        height: 4em;
+    }
+
+    main.sport section:last-of-type ol li a img{
+        width: 5em;
+        height: 4em;
+    }
+
+    main.sport section:last-of-type{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5em;
+    }
+
+    main.sport section:last-of-type ol{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main.sport section:last-of-type button{
+        width: 10vw;
+    }
+
+    /*stukje met email*/
+    footer section.email{
+        background-size: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    footer section.email h2{
+        font-size: 1.6em;
+    }
+
+    footer section.email h3{
+        font-size: 1.4em;
+    }
+
+    /*blauw stukje met service en contact*/
+    footer section.servicecontact{
+        padding: 2em 5em;
+    }
+
+    footer section.servicecontact h2 {
+        font-size: 1.5em;
+        align-self: center;
+        flex-basis: 50%;
+    }
+
+    footer section.servicecontact img{
+        margin-right: 1em;
+    }
+
+    footer section.servicecontact div{
+        width: 40vw;
+        margin-right: 2em;
+    }
+
+    footer section.servicecontact div p{
+        font-size: 1em;
+    }
+
+
+    footer section.socials{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    footer section.socials div{
+        display: flex;
+        justify-content: flex-start;
+        margin: 1em;
+        padding: 0;
+    }
+
+    footer section.socials div a img{
+        margin: 0 0.3em;
+    }
+
+    footer section.app{
+        display: none;
+    }
+
+    footer section.beoordelingen{
+        justify-content: space-between;
+    }
+
+    footer section.beoordelingen p{
+        font-size: 0.8em;
+        margin-left: 1em;
+    }
+
+    footer section.kleinelettertjes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer section.kleinelettertjes img:first-of-type{
+       margin: 0 40%;
+    }
 }
 
+@media (max-width: 900px) {
+    /*css voor de navigatie wanneer het scherm groter wordt*/
+    header nav:first-of-type > div:first-of-type, header nav:first-of-type > div:last-of-type {
+        display: none;
+    }
 
+    header nav:first-of-type > div:nth-of-type(2) {
+        height: 4em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 
+    header nav:first-of-type > div:nth-of-type(2) a {
+        position: relative;
+        top: -4em;
+        color: #0000a4;
+        margin-left: 0.2em;
+    }
+
+    header nav:first-of-type > div:nth-of-type(2) svg {
+        fill: #0000a4;
+    }
+
+    header nav:first-of-type > div:nth-of-type(2) input {
+        position: absolute;
+        top: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+    }
+
+    /*css voor de sport pagina*/
+
+    /*Dit zorgt ervoor dat het winkelkarretje verdwijnt wanneer het scherm kleiner wordt.*/
+    main.sport ol:last-of-type li > button{
+        display: none;
+    }
+}
+
+@media (min-width: 1080px){
+    main.index a.paard img:last-of-type{
+        width: 80vw;
+        height: 35em;
+    }
+    /*css voor de tekst in het stukje met de kortingen onder de grote foto*/
+    main ul li a h3{
+        top: 2em;
+    }
+
+    main ul li:nth-of-type(2) a h3{
+        top: 3em;
+    }
+
+    /*css voor het stukje: kies een categorie*/
+    main.index section:nth-of-type(1) img{
+        width: 8em;
+    }
+
+    main.sport a h2{
+        top: -8em;
+    }
+
+    main.sport a h3{
+        top: -5em;
+    }
+
+    main.sport a.filter{
+        display: none;
+    }
+}
 
 
 

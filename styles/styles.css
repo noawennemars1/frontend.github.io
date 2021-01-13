@@ -454,8 +454,9 @@ main.index section:nth-of-type(2) div a{
     width: 9em;
     margin: 1em 0.75em;
 }
-
+/************************************************************/
 /*css voor het stukje populair speelgoed met het paard */
+/************************************************************/
 
 main.index a.paard{
     position: relative;
@@ -519,7 +520,7 @@ main ol li a p{
     margin-top: 0.5em;
 }
 
-main ol li a img{
+main ol:last-of-type li a img{
     width: 13em;
 }
 
@@ -733,60 +734,66 @@ main.sport span button{
     padding: 0.75em 1em;
     font-size: 0.7em;
 }
-
+/************************************************************************************/
 /*css voor de producten*/
-
-main.sport ol:last-of-type{
+/************************************************************************************/
+main.sport > ol:last-of-type{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 0em;
+    margin-left: 0;
 }
 
-main.sport ol:last-of-type li{
+main.sport > ol:last-of-type li{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 1em 0;
     border-bottom: 2px solid #dadada;
 }
 
-main.sport ol:last-of-type li a:first-of-type{
+main.sport > ol:last-of-type li div div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+main.sport > ol:last-of-type li a:first-of-type{
     display: flex;
     padding-right: 1em;
 }
 
-main.sport ol:last-of-type li a:last-of-type{
+main.sport > ol:last-of-type li div a:last-of-type{
     display: flex;
-    flex-basis: 65%;
     margin-left: 1em;
 }
 
-main.sport ol:last-of-type li a{
+main.sport > ol:last-of-type li div a{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-main.sport ol:last-of-type li a img{
+main.sport > ol:last-of-type li div a img{
     width: 5em;
     height: 4em;
 }
 
-main.sport ol:last-of-type li a p{
+main.sport > ol:last-of-type li div a p{
     font-size: 0.8em;
     text-align: left;
 }
 
-main.sport ol:last-of-type li a p:nth-of-type(2){
+main.sport > ol:last-of-type li div a p:nth-of-type(2){
     font-weight: bolder;
 }
 
-main.sport ol:last-of-type li a p:nth-of-type(3){
+main.sport > ol:last-of-type li div a p:nth-of-type(3){
     font-size: 0.7em;
 }
 
-main.sport ol:last-of-type li a span{
+main.sport > ol:last-of-type li div a span{
     display: flex;
     width: 3em;
     font-size: 0.7em;
@@ -796,14 +803,14 @@ main.sport ol:last-of-type li a span{
     border: none;
 }
 
-main.sport ol:last-of-type li a span img{
+main.sport > ol:last-of-type li div a span img{
     width: 6em;
     padding-right: 0.3em;
     margin-left: 0;
 }
 
 /*css voor de prijs*/
-main.sport ol:last-of-type li a div:last-of-type p:first-of-type{
+main.sport > ol:last-of-type li div > div:last-of-type > p:first-of-type{
     color: red;
     padding-right: 5em;
     font-size: 1.5em;
@@ -811,38 +818,47 @@ main.sport ol:last-of-type li a div:last-of-type p:first-of-type{
     font-family: 'bree-serif', 'Graphik', sans-serif;
 }
 
-main.sport ol:last-of-type li > button{
+main.sport ol:last-of-type li div > button{
     width: 5em;
     height: 3em;
     border: none;
     background-color: #ffe900;
-    margin-left: 1em;
 }
 
-main.sport ol:last-of-type li > button img{
+main.sport > ol:last-of-type li div > button img{
     padding: 0.2em;
 }
 
-main.sport ol:last-of-type li > button img{
+main.sport > ol:last-of-type li div > button img{
     width: 3em;
     height: 1.5em;
 }
 
 /*css voor de voorraad*/
-main.sport ol:last-of-type li a div:last-of-type p:nth-of-type(3){
+main.sport > ol:last-of-type li div > div:last-of-type > p:nth-of-type(3){
     color: green;
     font-size: 0.8em;
 }
 
-main.sport ol:last-of-type li a p:nth-of-type(5){
+main.sport > ol:last-of-type li div p:nth-of-type(5){
     color: green;
     font-weight: 600;
     padding: 0.2em 0.5em;
     border: 2px solid green;
 }
 
-/*css voor de pagina's*/
+main.sport > ol:last-of-type li div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
 
+
+
+
+/************************************************************************************/
+/*css voor de pagina's*/
+/************************************************************************************/
 main.sport section:nth-of-type(3){
     display: flex;
     justify-content: space-between;
@@ -874,13 +890,14 @@ main.sport section:nth-of-type(3) img{
 
 
 /*css voor het blauwe stukje verder kijken*/
-main.sport section:last-of-type{
+main.sport > section:last-of-type{
     background-color: #F0F6FF;
     width: 100vw;
-    margin-left: -1em;
     text-align: center;
     padding: 0.5em 0;
     margin-top: 1em;
+    margin-left: -1em;
+
 }
 
 main.sport section:last-of-type h2{
@@ -991,12 +1008,33 @@ footer section ul li a{
 footer section ul li a img.pijlbeneden{
     width: 0.75em;
 }
+/*Dit is css voor het lijstje ontdek alles bij bol.com en voor het lijstje onder het blauwe stukje service voor op groot scherm*/
+footer section h2{
+    display: flex;
+    flex-basis: 100%;
+}
+
+footer > section > ol li{
+    display: flex;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
+footer > section > ol li a{
+    color: #333;
+}
+
+footer section ol li a:hover{
+    color: #00f;
+}
 
 /*css voor het stukje over mail*/
 footer section.email{
     background: url("../images/email.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     padding-bottom: 0.5em;
     margin-bottom: -0.19em;
 }
@@ -1072,7 +1110,7 @@ footer section.app{
     display: flex;
     justify-content: space-between;
     padding: 0 0 2em 0;
-    margin: -2em 1em 1em 1em;
+    margin: 1em;
     height: 5em;
     border-bottom: 2px solid #dadada;
 }
@@ -1185,7 +1223,7 @@ footer section.kleinelettertjes p:first-of-type{
     width: 30ch;
 }
 
-@media (min-width: 900px){
+@media (min-width: 901px){
     h1, h2{
       font-size: 1.1em;
     }
@@ -1205,8 +1243,11 @@ footer section.kleinelettertjes p:first-of-type{
     }
 
     header nav:first-of-type > div:nth-of-type(2) a:first-of-type {
-        visibility: hidden;
-        position: absolute;
+        display: none;
+    }
+
+    header nav:last-of-type{
+        display: none;
     }
 
     /*css voor de gehele pagina wanneer het scherm kleiner is*/
@@ -1215,10 +1256,11 @@ footer section.kleinelettertjes p:first-of-type{
     }
 
     /*css voor de sinterklaas afbeelidng*/
-    main img:first-of-type {
-        display: flex;
-        justify-content: center;
-        width: 80vw;
+
+    /*grote foto van sinterklaas*/
+    main.index > a:first-of-type img:first-of-type{
+        height: 20em;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1236,8 +1278,9 @@ footer section.kleinelettertjes p:first-of-type{
         top: 2em;
     }
 
+    /*css voor de afbeeldingen bij de aanbiedingen*/
     main ul li a img:last-of-type{
-        width: 12em;
+        width: 14em;
     }
 
     main.index section:nth-of-type(1) img{
@@ -1271,15 +1314,9 @@ footer section.kleinelettertjes p:first-of-type{
         width: 10em;
     }
 
-    footer section.servicecontact{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
     /*css voor de sport pagina*/
 
     main.sport a.banner img:last-of-type{
-        width: 80vw;
         height: 45vh;
     }
 
@@ -1291,49 +1328,57 @@ footer section.kleinelettertjes p:first-of-type{
         top: -6em;
     }
 
-    main.sport ol:last-of-type > li a img{
-        height: 7em;
-        width: 10em;
-    }
+    /*css voor het uitzetten van het lijstje ontdek alles bij bol.com voor klein scherm*/
 
-    main.sport section:nth-of-type(2) ol:first-of-type li a img{
-        width: 4em;
-        height: 4em;
-    }
-
-    main.sport section:last-of-type ol li a img{
-        width: 5em;
-        height: 4em;
-    }
-
-    main.sport section:last-of-type{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: -5em;
-    }
-
-    main.sport section:last-of-type ol{
+    footer section:first-of-type{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5em 15em 0;
     }
 
-    main.sport section:last-of-type button{
-        width: 10vw;
+    footer section:first-of-type ol{
+        width: 15vw;
+        margin-top: 1em;
+    }
+
+    footer section:first-of-type ul{
+        display: none;
+    }
+
+    footer section:nth-of-type(4) ul{
+        display: none;
+    }
+
+    footer section:nth-of-type(4){
+        display: flex;
+        flex-direction: row;
+        margin: 1em 13.5em;
+    }
+
+    footer section:nth-of-type(4) ol{
+        display: flex;
+        flex-direction: column;
+        width: 12em;
+    }
+
+    footer section:first-of-type h2{
+        margin: 3em 0 0 0;
+        flex-basis: 100%;
     }
 
     /*stukje met email*/
     footer section.email{
-        background-size: 80%;
+        background-size: 100%;
         display: flex;
         flex-direction: column;
-        margin: 2em;
+        margin: 2em auto;
+        width: 70vw;
     }
 
     footer section.email h2{
         font-size: 1.6em;
+        margin-left: 0.9em;
     }
 
     footer section.email h3{
@@ -1342,6 +1387,8 @@ footer section.kleinelettertjes p:first-of-type{
 
     /*blauw stukje met service en contact*/
     footer section.servicecontact{
+        display: flex;
+        flex-wrap: nowrap;
         padding: 2em 5em;
     }
 
@@ -1403,6 +1450,14 @@ footer section.kleinelettertjes p:first-of-type{
     footer section.kleinelettertjes img:first-of-type{
        margin: 0 40%;
     }
+
+    .categorieën{
+        display: none;
+    }
+
+    main.sport > section:last-of-type{
+        margin-left: -5em;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1439,15 +1494,43 @@ footer section.kleinelettertjes p:first-of-type{
     /*css voor de sport pagina*/
 
     /*Dit zorgt ervoor dat het winkelkarretje verdwijnt wanneer het scherm kleiner wordt.*/
-    main.sport ol:last-of-type li > button{
+    main.sport ol:last-of-type li div > button{
         display: none;
     }
+
+    main.sport > ol:last-of-type li img:first-of-type{
+        width: 5em;
+        height: 4em;
+    }
+
+    /*css voor het lijstje met producten*/
+    main.sport > ol:last-of-type li{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .categorieën{
+        display: none;
+    }
+
+    main.sport > ol:last-of-type li div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
+
+
 @media (min-width: 1080px){
+    main {
+        margin: 0 15em;
+    }
+
+    /*foto met het paard*/
     main.index a.paard img:last-of-type{
-        width: 80vw;
-        height: 35em;
+        width: 100%;
     }
     /*css voor de tekst in het stukje met de kortingen onder de grote foto*/
     main ul li a h3{
@@ -1463,6 +1546,7 @@ footer section.kleinelettertjes p:first-of-type{
         width: 8em;
     }
 
+    /*css voor de tekst op de foto bovenaan de pagina*/
     main.sport a h2{
         top: -8em;
     }
@@ -1471,10 +1555,28 @@ footer section.kleinelettertjes p:first-of-type{
         top: -5em;
     }
 
+    /*de filter knop wordt hier uitgezet*/
     main.sport a.filter{
         display: none;
     }
+
+    /*css voor de pagina's*/
+    main.sport section:nth-of-type(3){
+        margin: 0 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main.sport section:nth-of-type(3) a{
+        border: none
+    }
+
+    main.sport section:nth-of-type(3) img{
+        margin: 0;
+    }
+
+    main.sport > section:last-of-type{
+        margin-left: -16em;
+    }
 }
-
-
 

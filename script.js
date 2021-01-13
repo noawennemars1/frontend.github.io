@@ -1,4 +1,20 @@
-var datum = new Date ("Jan 15, 2021").getTime(); //hier maak ik een var aan voor de datum dat de timer moet aflopen
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*eslint-env browser*/
+/*eslint 'no-console':0*/
+
+var menuIcoon = document.querySelector('#menuIcoon');
+var nav = document.querySelector('#menu');
+var body = document.querySelector('body')
+
+function openMenu() {
+    nav.classList.toggle('toonnav');
+    body.classList.toggle('nietscrollen');
+}
+
+menuIcoon.addEventListener("click", openMenu);
+
+
+var datum = new Date ("Jan 16, 2021").getTime(); //hier maak ik een var aan voor de datum dat de timer moet aflopen
 var tijd = setInterval(function () { //om elke seconden de tijd up te daten
     var nu = new Date().getTime();
     var verschil = datum - nu; //het verschil tussen de datum en nu is de tijd die nog resterend is, dus die wordt hier berekend
@@ -14,15 +30,6 @@ var tijd = setInterval(function () { //om elke seconden de tijd up te daten
     }
 })
 
-var menuIcoon = document.querySelector('#menuIcoon');
-var nav = document.querySelector('#menu');
-var body = document.querySelector('body')
 
-function openMenu() {
-    nav.classList.toggle('toonnav');
-    body.classList.toggle('nietscrollen');
-}
-
-menuIcoon.addEventListener("click", openMenu);
 
 

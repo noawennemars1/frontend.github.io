@@ -108,17 +108,17 @@ main{
 ul::-webkit-scrollbar {
     width: 0;
     display: none;
-} /*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
+} 
 
 ol::-webkit-scrollbar {
     width: 0;
     display: none;
-}/*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
+}
 
 section::-webkit-scrollbar {
     width: 0;
     display: none;
-}/*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
+}
 
 /*css voor het bovenste stukje van de navigatie*/
 header nav:first-of-type > div:first-of-type {

@@ -24,16 +24,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
-
-
-
-## Voortgang 2 (week 5)
-De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer bij de dagdeal toegevoegd. Het gaat wel goed.
-
-**Screenshot(s):**
-<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 1">
-<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 1">
 
 | Samantha(ik)                                        | Noa                                                     | Nicole                                | Maylinn          | Stein         |
 | ---                                                 | ---                                                     | ---                                   | ---              | ---           |
@@ -41,6 +31,18 @@ De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer
 | scrollbar weghalen en laten werken op desktop       | ---                                                     | ---                                   | ---              | ---           |
 | js pathname voor code inladen werkt niet online     | ---                                                     | ---                                   | ---              | ---           |
 
+## Voortgang 2 (week 5)
+De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer bij de dagdeal toegevoegd. Het gaat wel goed.
+
+**Screenshot(s):**
+<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 1">
+
+<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 1">
+
+| Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat mijn animatie bij 10 graden begint? | Hoe maak ik een hamburger menu? |Wat is frontend?  | Ik heb een vraag over de scaling van de tekst en de video              | Geen vraag|
+| ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
 
 ## Voortgang 1 (week 3)
 
@@ -49,14 +51,15 @@ De nav is nog niet helemaal zoals ik wil, maar de rest gaat op zich wel goed. Ik
 
 **Screenshot(s):**
 <img src="images/voortgang1-home.png" width="375px" alt="homepagina voortgang 1">
+
 <img src="images/voortgang1-sport.png" width="375px" alt="sportpagina voortgang 1">
 
 ### Agenda voor meeting
 | Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
 | ---                                                                                | ---                | ---          | ---              | ---           |
-| Hoe zorg ik er voor dat mijn animatie bij 10 graden begint? | Hoe maak ik een hamburger menu? |Wat is frontend?  | Ik heb een vraag over de scaling van de tekst en de video              | Geen vraag|
-| ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
-    
+| Hoe zorg ik er voor dat de achtergrondkleur verandert als een element in beeld is? | Ik heb een vraag over mijn header |Hoe krijg ik ruimte tussen mijn scrollbar?  | Hoe maak je een achtergrond gradient met stipjes?              | Ik heb een vraag over mijn header|
+| In hoeverre is dit de surface plane/wat moet er bij?                               | ---                |Hoe krijg ik ruimte onder mijn button?      | Hoe krijg ik mijn header fixed?                 | ---            |
+| ---                                                                                | ---                | ---          | Hoe krijg ik sommige dingen responsive  | ---           |
 
 
 

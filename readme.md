@@ -6,10 +6,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
-
+1. bron font: https://fonts.adobe.com/fonts/bree-serif#fonts-section
+2. bron icoon: https://www.bol.com/nl/
+3. bron afbeelding PostNL: https://www.postnl.nl/ 
+4. bron afbeelding Bpost: https://www.engineetech365.com/en/company/bpost/
+5. bron afbeelding: https://www.thuiswinkel.org/consumenten/wat-is-thuiswinkel-waarborg
+6. bron afbeelding: https://www.bol.com/nl/
+7. bron font: https://codepen.io/renarsvilnis/pen/YwPLgm
+8. bron: https://dev.to/ashwamegh/how-to-hide-scrollbar-from-any-html-element-dae
 
 
 ## Eindgesprek (week 7/8)

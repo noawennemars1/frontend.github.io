@@ -29,34 +29,39 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer bij de dagdeal toegevoegd. Het gaat wel goed.
 
--same as voortgang 1-
+**Screenshot(s):**
+<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 1">
+<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 1">
 
+| Samantha(ik)                                        | Noa                                                     | Nicole                                | Maylinn          | Stein         |
+| ---                                                 | ---                                                     | ---                                   | ---              | ---           |
+| Hoe kan je slomer scrollen?                         | Hoe krijg ik mijn menu over de rest van de content?     | Mag ik ook andere iconen gebruiken?   | geen vraag       | Geen vraag    |
+| scrollbar weghalen en laten werken op desktop       | ---                                                     | ---                                   | ---              | ---           |
+| js pathname voor code inladen werkt niet online     | ---                                                     | ---                                   | ---              | ---           |
 
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
-
--dit ging goed & dit was lastig-
+De nav is nog niet helemaal zoals ik wil, maar de rest gaat op zich wel goed. Ik ben nog niet echt bezig geweest met het goed positioneren van tekst over de afbeeldingen heen, maar dat komt nog wel.  
 
 **Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/voortgang1-home.png" width="375px" alt="homepagina voortgang 1">
+<img src="images/voortgang1-sport.png" width="375px" alt="sportpagina voortgang 1">
 
 ### Agenda voor meeting
+| Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat mijn animatie bij 10 graden begint? | Hoe maak ik een hamburger menu? |Wat is frontend?  | Ik heb een vraag over de scaling van de tekst en de video              | Geen vraag|
+| ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
+    
 
--samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
+De meeting ging wel goed. Mijn vraag werd niet direct beantwoordt, maar ik kreeg daarna een beginnetje waarna ik het probleem heb kunnen oplossen.
 
 
 
@@ -67,17 +72,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** rood
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** responsive
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** https://www.bol.com/nl/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/home_bolcom.png" width="375px" alt="breakdownsheet homepagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 

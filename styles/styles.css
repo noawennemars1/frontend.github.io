@@ -60,7 +60,29 @@ a img.pijl{
     max-width: 2em;
 }
 
+/*css voor de ol's*/
 
+main ol{
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    margin-right: -1em;
+}
+
+main ol li{
+    margin: 0.5em 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+main ol li a p{
+    color: #333;
+    margin-top: 0.5em;
+}
+
+main ol:last-of-type li a img{
+    width: 13em;
+}
 
 header{
     width: 100vw;
@@ -86,17 +108,17 @@ main{
 ul::-webkit-scrollbar {
     width: 0;
     display: none;
-}
+} /*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
 
 ol::-webkit-scrollbar {
     width: 0;
     display: none;
-}
+}/*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
 
 section::-webkit-scrollbar {
     width: 0;
     display: none;
-}
+}/*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
 
 /*css voor het bovenste stukje van de navigatie*/
 header nav:first-of-type > div:first-of-type {
@@ -500,30 +522,6 @@ main.index a.link img{
     margin-top: 0;
 }
 
-/*css voor de ol's*/
-
-main ol{
-    display: flex;
-    overflow-x: scroll;
-    list-style: none;
-    margin-right: -1em;
-}
-
-main ol li{
-    margin: 0.5em 1em;
-    text-align: center;
-    justify-content: center;
-}
-
-main ol li a p{
-    color: #333;
-    margin-top: 0.5em;
-}
-
-main ol:last-of-type li a img{
-    width: 13em;
-}
-
 /*css voor het stukje met cadeaus voor iedereen*/
 
 main.index ol.cadeausvi li a{
@@ -611,13 +609,9 @@ main.index section.ookinteressant ol li a p:last-of-type{
     font-weight: 500;
 }
 
-
-
-
-
+/**********************************************************************/
 /*css voor de sport detailpagina*/
-
-
+/**********************************************************************/
 main.sport a h2{
     position: absolute;
     margin: 0 0 0 1em;
@@ -684,6 +678,7 @@ main.sport section:nth-of-type(2) ol:first-of-type{
 
 main.sport section:nth-of-type(2) ol:first-of-type li{
     border: none;
+    margin: 0 2em;
 }
 
 main.sport section:nth-of-type(2) ol:first-of-type li a img{
@@ -836,15 +831,17 @@ main.sport > ol:last-of-type li div > button img{
 
 /*css voor de voorraad*/
 main.sport > ol:last-of-type li div > div:last-of-type > p:nth-of-type(3){
-    color: green;
     font-size: 0.8em;
 }
 
-main.sport > ol:last-of-type li div p:nth-of-type(5){
+main.sport > ol:last-of-type li div > div:last-of-type > p:nth-of-type(2){
     color: green;
     font-weight: 600;
     padding: 0.2em 0.5em;
+    width: 15ch;
+    text-align: center;
     border: 2px solid green;
+    margin: 0.5em 0;
 }
 
 main.sport > ol:last-of-type li div{
@@ -1451,16 +1448,16 @@ footer section.kleinelettertjes p:first-of-type{
        margin: 0 40%;
     }
 
-    .categorieën{
-        display: none;
-    }
-
     main.sport > section:last-of-type{
         margin-left: -5em;
     }
 }
 
 @media (max-width: 900px) {
+    .categorieën{
+        display: none;
+    }
+
     /*css voor de navigatie wanneer het scherm groter wordt*/
     header nav:first-of-type > div:first-of-type, header nav:first-of-type > div:last-of-type {
         display: none;
@@ -1509,15 +1506,14 @@ footer section.kleinelettertjes p:first-of-type{
         flex-direction: row;
     }
 
-    .categorieën{
-        display: none;
-    }
 
     main.sport > ol:last-of-type li div {
         display: flex;
         flex-direction: column;
     }
-
+    main.sport > ol:last-of-type li div > div:last-of-type > p:nth-of-type(2){
+        font-size: 0.7em;
+    }
 
 }
 
@@ -1580,3 +1576,8 @@ footer section.kleinelettertjes p:first-of-type{
     }
 }
 
+:focus{
+    border: 2px solid deepskyblue;
+    padding: 0.5em;
+    outline: none;
+}

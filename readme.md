@@ -17,13 +17,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 
 **Screenshot(s):**
+Mobiel:
+<img src="images/eindresultaathome.png" width="375px" alt="homepagina op mobiel">
 
--screenshot(s) van je eindresultaat-
+<img src="images/eindresultaatsport.png" width="375px" alt="sportpagina op mobiel">
 
+Tablet:
+<img src="images/eindresultaat901home.png" width="375px" alt="homepagina op tabler">
+
+<img src="images/eindresultaat901sport.png" width="375px" alt="sportpagina op tablet">
+
+Desktop:
+<img src="images/eindresultaat1080home.png" width="375px" alt="homepagina op desktop">
+
+<img src="images/eindresultaat1080sport.png" width="375px" alt="sportpagina op desktop">
 
 
 ## Voortgang 3 (week 6)
+Voortgang 3 was niet heel anders dan voortgang 2, want er waren veel deadlines die week voor andere vakken, dus ik had weinig aan front-end gedaan.
 
+**Screenshot(s):**
+<img src="images/voortgang3-home.png" width="375px" alt="homepagina voortgang 3">
+
+<img src="images/voortgang3-sport.png" width="375px" alt="sportpagina voortgang 3">
 
 | Samantha(ik)                                        | Noa                                                     | Nicole                                | Maylinn          | Stein         |
 | ---                                                 | ---                                                     | ---                                   | ---              | ---           |
@@ -35,9 +51,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer bij de dagdeal toegevoegd. Het gaat wel goed.
 
 **Screenshot(s):**
-<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 1">
+<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 2">
 
-<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 1">
+<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 2">
 
 | Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
 | ---                                                                                | ---                | ---          | ---              | ---           |

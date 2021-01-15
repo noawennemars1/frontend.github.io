@@ -28,9 +28,9 @@ Over het algemeen ging het wel goed. Ik had nog niet eerder met position gewerkt
 Voortgang 3 was niet heel anders dan voortgang 2, want er waren veel deadlines die week voor andere vakken, dus ik had weinig aan front-end gedaan.
 
 **Screenshot(s):**
-<img src="images/voortgang3-home.png" width="375px" alt="homepagina voortgang 3">
 
-<img src="images/voortgang3-sport.png" width="375px" alt="sportpagina voortgang 3">
+<img src="images/voortgang3.png" width="375px" alt="voortgang 3 homepagina en sportpagina">
+
 
 | Samantha(ik)                                        | Noa                                                     | Nicole                                | Maylinn          | Stein         |
 | ---                                                 | ---                                                     | ---                                   | ---              | ---           |
@@ -42,9 +42,8 @@ Voortgang 3 was niet heel anders dan voortgang 2, want er waren veel deadlines d
 De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer bij de dagdeal toegevoegd. Het gaat wel goed.
 
 **Screenshot(s):**
-<img src="images/voortgang2-home.png" width="375px" alt="homepagina voortgang 2">
 
-<img src="images/voortgang2-sport.png" width="375px" alt="sportpagina voortgang 2">
+<img src="images/voortgang2.png" width="375px" alt="voortgang 3 homepagina en sportpagina">
 
 | Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
 | ---                                                                                | ---                | ---          | ---              | ---           |
@@ -57,9 +56,8 @@ De nav is gefixt en ik ben begonnen aan het hamburger menu. Ook heb ik een timer
 De nav is nog niet helemaal zoals ik wil, maar de rest gaat op zich wel goed. Ik ben nog niet echt bezig geweest met het goed positioneren van tekst over de afbeeldingen heen, maar dat komt nog wel.  
 
 **Screenshot(s):**
-<img src="images/voortgang1-home.png" width="375px" alt="homepagina voortgang 1">
 
-<img src="images/voortgang1-sport.png" width="375px" alt="sportpagina voortgang 1">
+<img src="images/voortgang1.png" width="375px" alt="voortgang 1 homepagina en sportpagina">
 
 ### Agenda voor meeting
 | Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |

@@ -20,20 +20,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Over het algemeen ging het wel goed. Ik had nog niet eerder met position gewerkt, dus dit was wel echt een nieuwe uitdaging. Flexbox had ik ook duidelijk nog niet helemaal onder de knie, maar ik merkte uiteindelijk wel dat het steeds beter ging. Op het eind, toen ik al meer dan 1000 regels css had, was ik een beetje het overzicht kwijt. Dat vond ik wel lastig. Vooral door de :last-of-type, nth-of-type etc. vond ik het vrij onduidelijk. Gelukkig is het wel gelukt, maar ik denk niet dat ik de nth-of-type, first-of-type etc. heel veel zou gebruiken. En over het algemeen vond ik het leuk, maar ik heb ook vaak bijna huilend achter mijn laptop gezeten. Uiteindelijk ben ik wel blij met hoe het is geworden.
 
 **Screenshot(s):**
-Mobiel:
-<img src="images/eindresultaathome.png" width="375px" alt="homepagina op mobiel">
-
-<img src="images/eindresultaatsport.png" width="375px" alt="sportpagina op mobiel">
-
-Tablet:
-<img src="images/eindresultaat901home.png" width="500px" alt="homepagina op tabler">
-
-<img src="images/eindresultaat901sport.png" width="500px" alt="sportpagina op tablet">
-
-Desktop:
-<img src="images/eindresultaat1080home.png" width="700px" alt="homepagina op desktop">
-
-<img src="images/eindresultaat1080sport.png" width="700px" alt="sportpagina op desktop">
+<img src="images/eindresultaat.svg" width="700px" alt="eindresultaat">
 
 
 ## Voortgang 3 (week 6)

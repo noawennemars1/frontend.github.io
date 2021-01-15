@@ -42,11 +42,6 @@ h3{
     color: #0000a4;
 }
 
-img {
-    margin: 0;
-    width: 100%;
-}
-
 p{
     font-family: 'Graphik', Arial, Helvetica, sans-serif;
     font-size: 0.9em;
@@ -104,11 +99,29 @@ main{
     padding: 0 1em;
 }
 
+/*classes die worden toegewezen aan de html wanneer er op het hamburgermenu icoontje wordt geklikt*/
+.toonnav {
+    transform: translateX(0)!important;
+}
+
+.navsluiten {
+    transform: translateX(-100%)!important;
+}
+
+.nietscrollen {
+    overflow: hidden;
+}
+
+/*css voor de afbeeldingen in het hamburgermenu*/
+.menuimg{
+    width: 1.5em;
+}
+
 /*Hier zorg ik ervoor dat er geen scrollbar is te zien wanneer je kan scrollen*/ /*bron: https://dev.to/ashwamegh/how-to-hide-scrollbar-from-any-html-element-dae geraadpleegd op 8-1-2021*/
 ul::-webkit-scrollbar {
     width: 0;
     display: none;
-} 
+} ==
 
 ol::-webkit-scrollbar {
     width: 0;
@@ -233,19 +246,6 @@ header nav:last-of-type{
     height: 100vh;
 }
 
-/*classes die worden toegewezen aan de html wanneer er op het hamburgermenu icoontje wordt geklikt*/
-.toonnav {
-    transform: translateX(0)!important;
-}
-
-.nietscrollen {
-    overflow: hidden;
-}
-
-/*css voor de afbeeldingen in het hamburgermenu*/
-.menuimg{
-    width: 1.5em;
-}
 
 /*css voor het kruisje waarmee je het menu sluit*/
 header nav:last-of-type div span.sluiten{
@@ -265,8 +265,8 @@ header nav:last-of-type span.sluiten img{
 
 /*css voor de pijltjes in het menu*/
 img.pijlnav{
-    width: 1.5em;
-    height: 1.5em;
+    width: 0.8em;
+    height: 0.8em;
 }
 
 /*css voor lijstje met categorien in het menu */
@@ -314,20 +314,47 @@ header nav div div.stukjetussen{
     height: 1.5em;
 }
 
-header nav:last-of-type div ol:nth-of-type(2) li{
+header nav:last-of-type div ol:nth-of-type(2) li a, header nav:last-of-type div ol:nth-of-type(4) li a{
     border-bottom: 1px solid grey;
     padding: 1em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
 }
 
-/*css voor de homepage*/
+header nav:last-of-type div ol:nth-of-type(2) li:last-of-type{
+    background-color: #f0f6ff;
+}
 
-/*main img van Sinterklaas*/
-main img:first-of-type {
+header nav:last-of-type div ol:nth-of-type(2) li:last-of-type a{
+    padding: 1.5em;
+}
+
+header nav:last-of-type div ol:nth-of-type(2) li:last-of-type h3{
+    font-size: 1.2em;
+}
+
+header nav:last-of-type div ol:nth-of-type(3) li a{
+    border-bottom: 1px solid grey;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
-    margin: 0 -1em;
+}
+
+header nav:last-of-type div ol:nth-of-type(3) li a div:first-of-type img{
+    margin: 0 0.5em 0 0;
+}
+
+header nav:last-of-type div ol:nth-of-type(4) li a{
+    color: #333;
+}
+/*main img van Sinterklaas en de thuissporter*/
+.groteimg{
+    width: 100vw !important;
+    margin: 0 -1em !important;
 }
 
 /*main section met plaatjes van kortingen en voordelen*/
@@ -506,7 +533,7 @@ main.index a.paard img:last-of-type{
 main.index a.paard img:first-of-type{
     position: absolute;
     bottom: 1.5em;
-    left: -12em
+    left: -15em
 }
 
 main.index a.link {
@@ -678,7 +705,7 @@ main.sport section:nth-of-type(2) ol:first-of-type{
 
 main.sport section:nth-of-type(2) ol:first-of-type li{
     border: none;
-    margin: 0 2em;
+    margin: 0 2em 1em 2em;
 }
 
 main.sport section:nth-of-type(2) ol:first-of-type li a img{
@@ -1182,6 +1209,7 @@ footer section.beoordelingen div:last-of-type{
 
 footer section.beoordelingen div img{
     width: 2.3em;
+    height: 2.3em;
     margin: 0.5em;
 }
 

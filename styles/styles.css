@@ -526,6 +526,8 @@ main.index a.paard h3{
 
 main.index a.paard img:last-of-type{
     padding-top: 1em;
+    width: 100vw;
+    margin: 0 -1em;
 }
 
 main.index a.paard img:first-of-type{
@@ -1285,7 +1287,7 @@ footer section.kleinelettertjes p:first-of-type{
     /*grote foto van sinterklaas*/
     main.index > a:first-of-type img:first-of-type{
         width: 100vw;
-        margin: 0-5em;
+        margin: 0 -5em;
     }
 
     /*css voor de tekst bij linkjes*/
@@ -1437,7 +1439,6 @@ footer section.kleinelettertjes p:first-of-type{
         font-size: 1em;
     }
 
-
     footer section.socials{
         display: flex;
         align-items: flex-start;
@@ -1534,24 +1535,15 @@ footer section.kleinelettertjes p:first-of-type{
         height: 4em;
     }
 
-    /*css voor het lijstje met producten*/
-    main.sport > ol:last-of-type li{
-        display: flex;
-        flex-direction: row;
-    }
-
-
     main.sport > ol:last-of-type li div {
         display: flex;
         flex-direction: column;
     }
+
     main.sport > ol:last-of-type li div > div:last-of-type > p:nth-of-type(2){
         font-size: 0.7em;
     }
-
 }
-
-
 
 @media (min-width: 1080px){
     main {
@@ -1587,15 +1579,6 @@ footer section.kleinelettertjes p:first-of-type{
         width: 8em;
     }
 
-    /*css voor de tekst op de foto bovenaan de pagina*/
-    main.sport a h2{
-        top: -8em;
-    }
-
-    main.sport a h3{
-        top: -5em;
-    }
-
     /*de filter knop wordt hier uitgezet*/
     main.sport a.filter{
         display: none;
@@ -1610,10 +1593,6 @@ footer section.kleinelettertjes p:first-of-type{
 
     main.sport section:nth-of-type(3) a{
         border: none
-    }
-
-    main.sport section:nth-of-type(3) img{
-        margin: 0;
     }
 
     main.sport > section:last-of-type{

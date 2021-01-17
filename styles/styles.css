@@ -155,10 +155,8 @@ header nav:first-of-type > div:first-of-type > a:last-of-type {
 /*De navigatiebalk wordt hier opgemaakt*/
 header nav:first-of-type > div:nth-of-type(2){
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: #0000a4;
-    justify-content: space-between;
     position: relative;
     width: 100vw;
 }
@@ -1551,8 +1549,8 @@ footer section.kleinelettertjes p:first-of-type{
     }
 
     main.index > a:first-of-type img:first-of-type{
-        margin: 0 -16em;
-        width: 100vw;
+        margin: 0 -8em;
+        width: 80vw;
         height: 40vh;
     }
 

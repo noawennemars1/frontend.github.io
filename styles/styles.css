@@ -162,8 +162,8 @@ header nav:first-of-type > div:nth-of-type(2){
 }
 
 header nav:first-of-type > div:nth-of-type(2) svg{
-    height: 25px;
-    width: 25px;
+    height: 1.5em;
+    width: 1.5em;
     fill: white;
 }
 
@@ -357,7 +357,6 @@ header nav:last-of-type div ol:nth-of-type(4) li a{
 main ul{
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
     overflow-x: scroll;
     position: relative;
     margin-top: 1em;

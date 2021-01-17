@@ -5,9 +5,11 @@
 var menuIcoon = document.querySelector('#menuIcoon');
 var nav = document.querySelector('#menu');
 var body = document.querySelector('body');
+
 var menuSluiten = document.querySelector('#sluitIcoon');
 var nav = document.querySelector('#menu');
-var datum = new Date ("Jan 16, 2021").getTime(); //hier maak ik een var aan voor de datum dat de timer moet aflopen
+
+var datum = new Date ("Jan 19, 2021").getTime(); //hier maak ik een var aan voor de datum dat de timer moet aflopen
 var tijd = setInterval(function () { //om elke seconden de tijd up te daten
 var nu = new Date().getTime();
 var verschil = datum - nu; //het verschil tussen de datum en nu is de tijd die nog resterend is, dus die wordt hier berekend
@@ -21,6 +23,7 @@ function openMenu() {
 }
 function sluitMenu() {
     nav.classList.toggle('navsluiten');
+    body.classList.toggle('welscrollen');
 }
 
 menuIcoon.addEventListener("click", openMenu);

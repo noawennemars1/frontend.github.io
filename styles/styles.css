@@ -112,6 +112,10 @@ main{
     overflow: hidden;
 }
 
+.welscrollen {
+    overflow: scroll;
+}
+
 /*css voor de afbeeldingen in het hamburgermenu*/
 .menuimg{
     width: 1.5em;
@@ -121,7 +125,7 @@ main{
 ul::-webkit-scrollbar {
     width: 0;
     display: none;
-} ==
+}
 
 ol::-webkit-scrollbar {
     width: 0;
@@ -165,7 +169,6 @@ header nav:first-of-type > div:nth-of-type(2) svg{
     fill: white;
 }
 
-
 header nav:first-of-type a {
     color: #0000a4;
     text-decoration: none;
@@ -198,8 +201,8 @@ header nav:first-of-type form input{
     border-radius: 10em;
     padding: 1.3em 1em;
 }
-/*zoekbalk tekst*/
 
+/*zoekbalk tekst*/
 header nav:first-of-type form input::placeholder{
     color: black;
     opacity: 0.5;
@@ -350,11 +353,6 @@ header nav:last-of-type div ol:nth-of-type(3) li a div:first-of-type img{
 
 header nav:last-of-type div ol:nth-of-type(4) li a{
     color: #333;
-}
-/*main img van Sinterklaas en de thuissporter*/
-.groteimg{
-    width: 100vw !important;
-    margin: 0 -1em !important;
 }
 
 /*main section met plaatjes van kortingen en voordelen*/
@@ -662,6 +660,8 @@ main.sport a h3{
 
 main.sport a.banner img:last-of-type{
     padding-top: 1em;
+    margin: 0 -1em;
+    width: 100vw;
 }
 
 main.sport a.banner img:first-of-type{
@@ -1284,9 +1284,8 @@ footer section.kleinelettertjes p:first-of-type{
 
     /*grote foto van sinterklaas*/
     main.index > a:first-of-type img:first-of-type{
-        height: 20em;
-        width: 100%;
-        margin: 0 auto;
+        width: 100vw;
+        margin: 0-5em;
     }
 
     /*css voor de tekst bij linkjes*/
@@ -1343,6 +1342,8 @@ footer section.kleinelettertjes p:first-of-type{
 
     main.sport a.banner img:last-of-type{
         height: 45vh;
+        width: 80vw;
+        margin: 0 auto;
     }
 
     main.sport a h2{
@@ -1486,6 +1487,11 @@ footer section.kleinelettertjes p:first-of-type{
         display: none;
     }
 
+    main.index > a:first-of-type img:first-of-type{
+        width: 100vw;
+        margin: 0 -1em;
+    }
+
     /*css voor de navigatie wanneer het scherm groter wordt*/
     header nav:first-of-type > div:first-of-type, header nav:first-of-type > div:last-of-type {
         display: none;
@@ -1552,6 +1558,12 @@ footer section.kleinelettertjes p:first-of-type{
         margin: 0 15em;
     }
 
+    main.index > a:first-of-type img:first-of-type{
+        margin: 0 -16em;
+        width: 100vw;
+        height: 40vh;
+    }
+
     /*foto met het paard*/
     main.index a.paard img:last-of-type{
         width: 100%;
@@ -1563,6 +1575,11 @@ footer section.kleinelettertjes p:first-of-type{
 
     main ul li:nth-of-type(2) a h3{
         top: 3em;
+    }
+
+    main.sport a.banner img:last-of-type{
+        width: 80vw;
+        margin: 0 -5em;
     }
 
     /*css voor het stukje: kies een categorie*/

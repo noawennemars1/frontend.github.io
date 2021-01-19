@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: white;
     color: #333;
     font-family: 'Graphik', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /*Hier voeg ik het font van bol.com toe aan de css vanaf internet*/
@@ -782,7 +782,7 @@ main.sport > ol:last-of-type li div div{
 
 main.sport > ol:last-of-type li a:first-of-type{
     display: flex;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 main.sport > ol:last-of-type li div a:last-of-type{
